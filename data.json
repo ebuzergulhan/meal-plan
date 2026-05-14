@@ -2414,22 +2414,21 @@
         },
         "dn": {
           "main": {
-            "id": 47,
-            "name": "Ispanak yemegi + yogurt",
-            "desc": "Kiymali ispanak, pirinc pilavi",
+            "id": 97,
+            "name": "Pizza",
+            "desc": "",
+            "servings": "",
+            "ingredients": [
+              "Un",
+              "Sucuk",
+              "Dometes sos",
+              "Fesleğen"
+            ],
+            "instructions": "",
             "type": "dinner",
             "cat": "balanced",
             "kid": false,
-            "we": false,
-            "ingredients": [
-              "500g ispanak",
-              "300g kiyma",
-              "1 sogan",
-              "1 yemek kasigi domates salca",
-              "100g pirinc",
-              "zeytinyagi",
-              "300g yogurt"
-            ]
+            "we": false
           },
           "alts": [
             {
