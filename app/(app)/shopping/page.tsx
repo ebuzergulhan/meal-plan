@@ -135,7 +135,7 @@ export default function ShoppingPage() {
               view === i ? "bg-[#a3e635] text-black" : "border border-[#1e1e2a] text-[#9090a8] hover:text-white"
             }`}
           >
-            {DAY_SHORT[i]}
+{DAY_SHORT[i]} {d.date.split(" ")[0]}
           </button>
         ))}
       </div>

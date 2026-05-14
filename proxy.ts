@@ -21,6 +21,10 @@ export async function proxy(req: NextRequest) {
   const token = req.cookies.get(COOKIE_NAME)?.value;
   const expected = await computeToken(PASSWORD);
   if (token !== expected) {
+    // API calls get a JSON 401, not an HTML redirect
+    if (pathname.startsWith("/api/")) {
+      return NextResponse.json({ error: "Giris gerekli" }, { status: 401 });
+    }
     return NextResponse.redirect(new URL("/login", req.url));
   }
 

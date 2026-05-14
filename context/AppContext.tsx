@@ -36,7 +36,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     fetch("/api/state")
-      .then((r) => r.json())
+      .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
       .then((data: AppState) => {
         // Ensure recipes are loaded; if not, use empty array so plan generation works
         const recipes = data.recipes ?? [];

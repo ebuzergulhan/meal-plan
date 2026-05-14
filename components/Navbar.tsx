@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { CalendarDays, BookOpen, ShoppingCart, Zap } from "lucide-react";
+import { CalendarDays, BookOpen, ShoppingCart, Zap, Pizza } from "lucide-react";
 
 const links = [
   { href: "/dashboard", label: "Plan", icon: CalendarDays },
   { href: "/recipes", label: "Tarifler", icon: BookOpen },
   { href: "/shopping", label: "Alisveris", icon: ShoppingCart },
+  { href: "/pizza", label: "Pizza", icon: Pizza },
 ];
 
 export default function Navbar() {

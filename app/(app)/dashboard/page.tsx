@@ -138,7 +138,7 @@ export default function DashboardPage() {
               }`}
             >
               <span className="text-[9px] uppercase tracking-widest opacity-70">{DAY_SHORT[i]}</span>
-              <span className="mt-0.5 text-sm">{i + 1}</span>
+              <span className="mt-0.5 text-sm">{d.date.split(" ")[0]}</span>
             </button>
           ))}
         </div>
