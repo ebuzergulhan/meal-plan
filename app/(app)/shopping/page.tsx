@@ -94,25 +94,25 @@ export default function ShoppingPage() {
 
   const checkedCount = Object.values(shopChecks).filter(Boolean).length;
 
-  if (!plan) return <div className="flex min-h-[60vh] items-center justify-center"><p className="text-[#9090a8]">Yukleniyor...</p></div>;
+  if (!plan) return <div className="flex min-h-[60vh] items-center justify-center"><p className="text-slate-400">Yukleniyor...</p></div>;
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-6">
       {/* Header */}
       <div className="mb-6 flex items-center justify-between">
         <div>
-          <h1 className="text-xl font-extrabold text-white">Alisveris Listesi</h1>
-          <p className="mt-0.5 text-xs text-[#9090a8]">
+          <h1 className="text-xl font-bold text-slate-900">Alisveris Listesi</h1>
+          <p className="mt-0.5 text-xs text-slate-400">
             {checkedCount}/{totalItems} item tamamlandi
           </p>
         </div>
-        <ShoppingCart size={20} className="text-[#a3e635]" />
+        <ShoppingCart size={20} className="text-blue-500" />
       </div>
 
       {/* Progress */}
-      <div className="mb-5 h-1.5 overflow-hidden rounded-full bg-[#1e1e2a]">
+      <div className="mb-5 h-1.5 overflow-hidden rounded-full bg-slate-100">
         <div
-          className="h-full rounded-full bg-[#a3e635] transition-all duration-300"
+          className="h-full rounded-full gradient-bg transition-all duration-300"
           style={{ width: totalItems ? `${(checkedCount / totalItems) * 100}%` : "0%" }}
         />
       </div>
@@ -121,8 +121,8 @@ export default function ShoppingPage() {
       <div className="mb-4 flex gap-1.5 overflow-x-auto pb-1">
         <button
           onClick={() => setView("all")}
-          className={`shrink-0 rounded-full px-3 py-1.5 text-xs font-semibold transition-colors ${
-            view === "all" ? "bg-[#a3e635] text-black" : "border border-[#1e1e2a] text-[#9090a8] hover:text-white"
+          className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold transition-colors ${
+            view === "all" ? "gradient-bg text-white shadow-sm" : "border border-slate-100 bg-slate-50 text-slate-500 hover:text-slate-700"
           }`}
         >
           Haftalik
@@ -131,11 +131,11 @@ export default function ShoppingPage() {
           <button
             key={i}
             onClick={() => setView(i)}
-            className={`shrink-0 rounded-full px-3 py-1.5 text-xs font-semibold transition-colors ${
-              view === i ? "bg-[#a3e635] text-black" : "border border-[#1e1e2a] text-[#9090a8] hover:text-white"
+            className={`shrink-0 rounded-lg px-3 py-1.5 text-xs font-semibold transition-colors ${
+              view === i ? "gradient-bg text-white shadow-sm" : "border border-slate-100 bg-slate-50 text-slate-500 hover:text-slate-700"
             }`}
           >
-{DAY_SHORT[i]} {d.date.split(" ")[0]}
+            {DAY_SHORT[i]} {d.date.split(" ")[0]}
           </button>
         ))}
       </div>
@@ -148,11 +148,11 @@ export default function ShoppingPage() {
           onChange={(e) => setNewItem(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && addCustom()}
           placeholder="Ekstra urun ekle..."
-          className="flex-1 rounded-lg border border-[#1e1e2a] bg-[#111118] px-3 py-2.5 text-sm text-white placeholder-[#3f3f52] outline-none focus:border-[#a3e635]/50"
+          className="flex-1 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm text-slate-900 placeholder-slate-400 outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-50 transition-all"
         />
         <button
           onClick={addCustom}
-          className="rounded-lg bg-[#a3e635] px-3 py-2.5 text-black hover:bg-[#bef264] active:scale-95 transition-all"
+          className="rounded-lg gradient-bg px-3 py-2.5 text-white hover:opacity-90 active:scale-95 transition-all"
         >
           <Plus size={16} strokeWidth={2.5} />
         </button>
@@ -207,7 +207,7 @@ export default function ShoppingPage() {
         return (
           <div key={si}>
             {view === "all" && (
-              <p className="mb-2 mt-5 text-[10px] font-bold uppercase tracking-widest text-[#a3e635]">
+              <p className="mb-2 mt-5 text-[10px] font-bold uppercase tracking-widest text-blue-600">
                 {sec.dayName}
               </p>
             )}
@@ -244,7 +244,7 @@ export default function ShoppingPage() {
       <Modal open={!!editModal} title="Urunu Duzenle" onClose={() => setEditModal(null)}>
         <div className="space-y-4">
           <div>
-            <label className="mb-1.5 block text-xs font-bold uppercase tracking-widest text-[#9090a8]">
+            <label className="mb-1.5 block text-xs font-bold uppercase tracking-widest text-slate-500">
               Urun adi
             </label>
             <input
@@ -252,14 +252,14 @@ export default function ShoppingPage() {
               value={editVal}
               onChange={(e) => setEditVal(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && saveEdit()}
-              className="w-full rounded-lg border border-[#1e1e2a] bg-[#0a0a0f] px-3 py-2.5 text-sm text-white outline-none focus:border-[#a3e635]/50"
+              className="w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm text-slate-900 outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-50 transition-all"
             />
           </div>
-          <div className="flex gap-2 border-t border-[#1e1e2a] pt-4">
-            <button onClick={() => setEditModal(null)} className="flex-1 rounded-lg border border-[#1e1e2a] py-2.5 text-sm text-[#9090a8] hover:text-white transition-colors">
+          <div className="flex gap-2 border-t border-slate-100 pt-4">
+            <button onClick={() => setEditModal(null)} className="flex-1 rounded-lg border border-slate-200 py-2.5 text-sm text-slate-500 hover:text-slate-900 transition-colors">
               Iptal
             </button>
-            <button onClick={saveEdit} className="flex-1 rounded-lg bg-[#a3e635] py-2.5 text-sm font-bold text-black hover:bg-[#bef264] transition-all">
+            <button onClick={saveEdit} className="flex-1 rounded-lg gradient-bg py-2.5 text-sm font-bold text-white hover:opacity-90 transition-all">
               Kaydet
             </button>
           </div>
@@ -272,8 +272,8 @@ export default function ShoppingPage() {
 function Section({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div className="mb-4">
-      <p className="mb-1.5 text-[10px] font-bold uppercase tracking-widest text-[#3f3f52]">{label}</p>
-      <div className="rounded-xl border border-[#1e1e2a] bg-[#111118] overflow-hidden divide-y divide-[#1e1e2a]">
+      <p className="mb-1.5 text-[10px] font-bold uppercase tracking-widest text-slate-400">{label}</p>
+      <div className="rounded-2xl border border-slate-100 bg-white overflow-hidden divide-y divide-slate-50">
         {children}
       </div>
     </div>
@@ -296,27 +296,27 @@ function ItemRow({
   onRemove: () => void;
 }) {
   return (
-    <div className={`flex items-center gap-3 px-4 py-3 transition-colors ${checked ? "bg-[#a3e635]/5" : ""}`}>
+    <div className={`flex items-center gap-3 px-4 py-3 transition-colors ${checked ? "bg-slate-50/80" : ""}`}>
       <button
         onClick={onToggle}
-        className={`flex h-5 w-5 shrink-0 items-center justify-center rounded border transition-colors ${
-          checked ? "border-[#a3e635] bg-[#a3e635]" : "border-[#2a2a3a]"
+        className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-md border-2 transition-colors ${
+          checked ? "gradient-bg border-transparent" : "border-slate-200"
         }`}
       >
-        {checked && <Check size={11} className="text-black" strokeWidth={3} />}
+        {checked && <Check size={11} className="text-white" strokeWidth={3} />}
       </button>
       <span
         className={`flex-1 text-sm transition-colors ${
-          checked ? "line-through text-[#3f3f52]" : "text-white"
+          checked ? "line-through text-slate-300" : "text-slate-700"
         }`}
       >
         {label}
       </span>
       <div className="flex items-center gap-1">
-        <button onClick={onEdit} className="rounded p-1 text-[#3f3f52] hover:text-[#9090a8] transition-colors">
+        <button onClick={onEdit} className="rounded p-1 text-slate-300 hover:text-slate-500 transition-colors">
           <Pencil size={12} />
         </button>
-        <button onClick={onRemove} className="rounded p-1 text-[#3f3f52] hover:text-red-400 transition-colors">
+        <button onClick={onRemove} className="rounded p-1 text-slate-300 hover:text-red-400 transition-colors">
           <X size={12} />
         </button>
       </div>

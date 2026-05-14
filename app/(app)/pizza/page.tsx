@@ -24,34 +24,26 @@ function calculate(inputs: Inputs) {
   const oilPct       = parseFloat(inputs.oilPct)    / 100;
   const poolishFlour = parseFloat(inputs.poolishFlour);
 
-  // Validate: all must be positive finite numbers
   const nums = [ballWeight, ballCount, hydration, saltPct, oilPct, poolishFlour];
   if (nums.some((n) => !isFinite(n) || n <= 0)) return null;
 
-  // Core baker's % calculations
   const totalDough  = ballWeight * ballCount;
-  // Flour = base; water, salt, oil are ON TOP of flour
   const totalFlour  = totalDough / (1 + hydration);
   const totalWater  = totalFlour * hydration;
   const totalSalt   = totalFlour * saltPct;
   const totalOil    = totalFlour * oilPct;
 
-  // Poolish is 1:1 flour:water
   const poolishWater = poolishFlour;
   const poolishTotal = poolishFlour + poolishWater;
 
-  // Poolish flour cannot exceed total flour
   if (poolishFlour >= totalFlour) return { error: "poolish" as const };
 
-  // Main dough additions
   const addFlour   = totalFlour - poolishFlour;
   const addWater   = totalWater - poolishWater;
   const addSalt    = totalSalt;
   const addOil     = totalOil;
   const addPoolish = poolishTotal;
 
-  // Final mixed weight is slightly higher than target because
-  // salt & oil are added on top of the flour+water base
   const finalWeight = totalDough + totalSalt + totalOil;
 
   return {
@@ -96,9 +88,8 @@ function InputField({
 }) {
   return (
     <div className="flex flex-col gap-1.5">
-      <label className="text-[11px] font-bold uppercase tracking-widest text-[#9090a8]">
-        {label}{" "}
-        <span className="text-[#a3e635]">({unit})</span>
+      <label className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
+        {label} <span className="gradient-text">({unit})</span>
       </label>
       <input
         type="number"
@@ -106,7 +97,7 @@ function InputField({
         step={step}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full rounded-lg border border-[#1e1e2a] bg-[#0a0a0f] px-3 py-2.5 text-sm text-white outline-none transition-colors focus:border-[#a3e635]/50 [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+        className="w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-semibold text-slate-900 outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-50 transition-all [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
       />
     </div>
   );
@@ -125,17 +116,18 @@ function ResultRow({
 }) {
   return (
     <div
-      className={`flex items-center justify-between rounded-lg px-4 py-3 ${
+      className={`flex items-center justify-between rounded-lg px-3 py-2.5 ${
         highlight
-          ? "border border-[#a3e635]/20 bg-[#a3e635]/5"
-          : "border border-[#1e1e2a] bg-[#0a0a0f]"
+          ? "border"
+          : "border border-slate-100 bg-slate-50"
       }`}
+      style={highlight ? { background: "rgba(37,99,235,0.05)", borderColor: "rgba(37,99,235,0.15)" } : {}}
     >
-      <span className={`text-sm ${highlight ? "font-bold text-[#a3e635]" : "text-[#9090a8]"}`}>
+      <span className={`text-sm ${highlight ? "font-bold gradient-text" : "text-slate-600"}`}>
         {label}
       </span>
-      <span className={`text-sm font-bold tabular-nums ${highlight ? "text-[#a3e635]" : "text-white"}`}>
-        {value} <span className="font-normal text-[#3f3f52]">{unit}</span>
+      <span className={`text-sm font-bold tabular-nums ${highlight ? "gradient-text" : "text-slate-900"}`}>
+        {value} <span className={`font-normal ${highlight ? "" : "text-slate-400"}`}>{unit}</span>
       </span>
     </div>
   );
@@ -151,11 +143,11 @@ function Section({
   children: React.ReactNode;
 }) {
   return (
-    <div className="rounded-xl border border-[#1e1e2a] bg-[#111118] p-5">
+    <div className="rounded-2xl border border-slate-100 bg-white p-5">
       <div className="mb-4 flex items-center gap-2">
-        <h2 className="font-extrabold text-white">{title}</h2>
+        <h2 className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">{title}</h2>
         {badge && (
-          <span className="rounded-full bg-[#a3e635]/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-[#a3e635]">
+          <span className="rounded-md bg-amber-50 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-amber-500">
             {badge}
           </span>
         )}
@@ -164,8 +156,6 @@ function Section({
     </div>
   );
 }
-
-// ─── Page ────────────────────────────────────────────────────────────────────
 
 // ─── Share text builder ───────────────────────────────────────────────────────
 
@@ -218,17 +208,15 @@ export default function PizzaPage() {
     if (result === null || result.error !== null) return;
     const text = buildShareText(inputs, result as typeof result & { error: null });
 
-    // Use native Web Share API if available (mobile: WhatsApp, Mail, Notes…)
     if (typeof navigator !== "undefined" && navigator.share) {
       try {
         await navigator.share({ title: "Pizza Hamuru Tarifi", text });
       } catch {
-        // user cancelled — do nothing
+        // user cancelled
       }
       return;
     }
 
-    // Fallback: copy to clipboard
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);
@@ -247,10 +235,10 @@ export default function PizzaPage() {
       {/* Header */}
       <div className="mb-6 flex items-start justify-between gap-3">
         <div>
-          <h1 className="text-xl font-extrabold text-white">
+          <h1 className="text-xl font-bold text-slate-900">
             Pizza Hamuru Hesaplayıcı
           </h1>
-          <p className="mt-0.5 text-xs text-[#9090a8]">
+          <p className="mt-0.5 text-xs text-slate-400">
             Baker&apos;s yüzdesi — un = 100%, diğerleri una orantılı
           </p>
         </div>
@@ -260,8 +248,8 @@ export default function PizzaPage() {
             onClick={handleShare}
             className={`inline-flex shrink-0 items-center gap-2 rounded-lg px-3 py-2 text-xs font-bold transition-all active:scale-95 ${
               copied
-                ? "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
-                : "bg-[#a3e635] text-black hover:bg-[#bef264]"
+                ? "bg-emerald-50 text-emerald-600 border border-emerald-200"
+                : "gradient-bg text-white shadow-md shadow-blue-100 hover:opacity-90"
             }`}
           >
             {copied ? (
@@ -293,7 +281,10 @@ export default function PizzaPage() {
 
           {/* Summary row */}
           {result && result.error === null && (
-            <div className="mt-4 grid grid-cols-2 gap-2 rounded-lg border border-[#1e1e2a] bg-[#0a0a0f] p-3 sm:grid-cols-4">
+            <div
+              className="mt-4 grid grid-cols-2 gap-2 rounded-xl p-3 sm:grid-cols-4"
+              style={{ background: "rgba(37,99,235,0.04)", border: "1px solid rgba(37,99,235,0.1)" }}
+            >
               {[
                 { label: "Toplam hamur", value: fmt(result.totalDough) + " gr" },
                 { label: "Toplam un",    value: fmt(result.totalFlour) + " gr" },
@@ -304,8 +295,8 @@ export default function PizzaPage() {
                 },
               ].map(({ label, value }) => (
                 <div key={label} className="flex flex-col gap-0.5">
-                  <span className="text-[10px] uppercase tracking-widest text-[#3f3f52]">{label}</span>
-                  <span className="text-sm font-bold text-white tabular-nums">{value}</span>
+                  <span className="text-[10px] font-semibold uppercase tracking-wider text-blue-400">{label}</span>
+                  <span className="text-sm font-bold text-slate-900 tabular-nums">{value}</span>
                 </div>
               ))}
             </div>
@@ -314,14 +305,13 @@ export default function PizzaPage() {
 
         {/* ── Validation error ── */}
         {result === null && (
-          <div className="rounded-xl border border-red-500/20 bg-red-500/10 px-4 py-3 text-sm text-red-400">
+          <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-600">
             Tüm değerler sıfırdan büyük pozitif sayı olmalıdır.
           </div>
         )}
         {result !== null && result.error === "poolish" && (
-          <div className="rounded-xl border border-red-500/20 bg-red-500/10 px-4 py-3 text-sm text-red-400">
-            Poolish unu toplam undan ({result && "totalFlour" in result ? "" : ""}
-            {(() => {
+          <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-600">
+            Poolish unu toplam undan ({(() => {
               const r = calculate({ ...inputs, poolishFlour: "0" });
               return r && r.error === null ? fmt(r.totalFlour) : "—";
             })()}{" "}
@@ -338,7 +328,7 @@ export default function PizzaPage() {
                 <ResultRow label="Poolish suyu"   value={fmt(result.poolishWater)} />
                 <ResultRow label="Poolish toplam" value={fmt(result.poolishTotal)} highlight />
               </div>
-              <p className="mt-3 text-[11px] text-[#3f3f52]">
+              <p className="mt-3 text-[11px] text-slate-400">
                 Eşit un ve su karıştırın, 1 saat oda sıcaklığında bekletin, ardından 12–16 saat buzdolabına kaldırın.
               </p>
             </Section>
@@ -353,10 +343,8 @@ export default function PizzaPage() {
                 <ResultRow label="Poolish"         value={fmt(result.addPoolish)} />
               </div>
 
-              {/* Divider */}
-              <div className="my-3 border-t border-[#1e1e2a]" />
+              <div className="my-3 border-t border-slate-100" />
 
-              {/* Weight note */}
               <div className="space-y-2">
                 <ResultRow
                   label="Hedef hamur ağırlığı"
@@ -368,7 +356,7 @@ export default function PizzaPage() {
                   highlight
                 />
               </div>
-              <p className="mt-3 text-[11px] text-[#3f3f52]">
+              <p className="mt-3 text-[11px] text-slate-400">
                 Tuz ve zeytinyağı una oranla eklenir; bu nedenle gerçek karışım ağırlığı hedef
                 ağırlıktan tuz ({fmt(result.addSalt)} gr) + zeytinyağı ({fmt(result.addOil)} gr)
                 kadar fazladır. Bu baker&apos;s yüzdesi davranışı olarak doğrudur.

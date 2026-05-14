@@ -21,10 +21,10 @@ const SLOT_META: { key: SlotKey; label: string; type: MealType }[] = [
 
 function tagColor(cat: string) {
   return cat === "protein"
-    ? "bg-blue-500/10 text-blue-400"
+    ? "bg-blue-50 text-blue-600"
     : cat === "light"
-    ? "bg-emerald-500/10 text-emerald-400"
-    : "bg-amber-500/10 text-amber-400";
+    ? "bg-emerald-50 text-emerald-600"
+    : "bg-amber-50 text-amber-600";
 }
 function tagLabel(cat: string) {
   return cat === "protein" ? "Protein" : cat === "light" ? "Hafif" : "Dengeli";
@@ -61,7 +61,7 @@ export default function DashboardPage() {
   if (!plan) {
     return (
       <div className="flex min-h-[60vh] items-center justify-center">
-        <p className="text-[#9090a8]">Yukleniyor...</p>
+        <p className="text-slate-400">Yukleniyor...</p>
       </div>
     );
   }
@@ -103,14 +103,14 @@ export default function DashboardPage() {
       {/* Header */}
       <div className="mb-6 flex items-center justify-between">
         <div>
-          <h1 className="text-xl font-extrabold text-white">Haftalik Plan</h1>
-          <p className="text-xs text-[#9090a8] mt-0.5">
+          <h1 className="text-xl font-bold text-slate-900">Haftalik Plan</h1>
+          <p className="text-xs text-slate-400 mt-0.5">
             Hafta {plan.week} &middot; {plan.days[0].date} – {plan.days[6].date}
           </p>
         </div>
         <button
           onClick={regenerate}
-          className="inline-flex items-center gap-1.5 rounded-lg bg-[#a3e635] px-3 py-2 text-xs font-bold text-black hover:bg-[#bef264] active:scale-95 transition-all"
+          className="inline-flex items-center gap-1.5 rounded-lg gradient-bg px-3 py-2 text-xs font-bold text-white shadow-md shadow-blue-100 hover:opacity-90 active:scale-95 transition-all"
         >
           <RefreshCw size={13} strokeWidth={2.5} />
           Yenile
@@ -122,7 +122,7 @@ export default function DashboardPage() {
         <button
           onClick={() => setActiveDay((d) => Math.max(0, d - 1))}
           disabled={activeDay === 0}
-          className="rounded-lg border border-[#1e1e2a] p-2 text-[#9090a8] hover:text-white disabled:opacity-30 transition-colors"
+          className="rounded-lg border border-slate-200 p-2 text-slate-400 hover:text-slate-700 disabled:opacity-30 transition-colors"
         >
           <ChevronLeft size={15} />
         </button>
@@ -131,13 +131,13 @@ export default function DashboardPage() {
             <button
               key={i}
               onClick={() => setActiveDay(i)}
-              className={`flex shrink-0 flex-col items-center rounded-lg px-3 py-2 text-xs font-bold transition-all ${
+              className={`flex shrink-0 flex-col items-center rounded-xl px-3.5 py-2.5 text-xs font-bold transition-all ${
                 activeDay === i
-                  ? "bg-[#a3e635] text-black"
-                  : "border border-[#1e1e2a] text-[#9090a8] hover:text-white"
+                  ? "gradient-bg text-white shadow-md shadow-blue-100"
+                  : "border border-slate-100 bg-slate-50 text-slate-400 hover:text-slate-700"
               }`}
             >
-              <span className="text-[9px] uppercase tracking-widest opacity-70">{DAY_SHORT[i]}</span>
+              <span className={`text-[9px] uppercase tracking-widest ${activeDay === i ? "opacity-70" : ""}`}>{DAY_SHORT[i]}</span>
               <span className="mt-0.5 text-sm">{d.date.split(" ")[0]}</span>
             </button>
           ))}
@@ -145,7 +145,7 @@ export default function DashboardPage() {
         <button
           onClick={() => setActiveDay((d) => Math.min(6, d + 1))}
           disabled={activeDay === 6}
-          className="rounded-lg border border-[#1e1e2a] p-2 text-[#9090a8] hover:text-white disabled:opacity-30 transition-colors"
+          className="rounded-lg border border-slate-200 p-2 text-slate-400 hover:text-slate-700 disabled:opacity-30 transition-colors"
         >
           <ChevronRight size={15} />
         </button>
@@ -153,10 +153,10 @@ export default function DashboardPage() {
 
       {/* Day badge */}
       <div className="mb-4 flex items-center gap-2">
-        <span className={`rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-wider ${day.isWe ? "bg-[#a3e635]/10 text-[#a3e635]" : "bg-[#1e1e2a] text-[#9090a8]"}`}>
+        <span className={`rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-wider ${day.isWe ? "bg-blue-50 text-blue-600" : "bg-slate-100 text-slate-500"}`}>
           {day.isWe ? "Hafta Sonu" : "Hafta Ici"}
         </span>
-        <span className="text-xs text-[#9090a8]">{day.day} · {day.date}</span>
+        <span className="text-xs text-slate-400">{day.day} · {day.date}</span>
       </div>
 
       {/* Meal slots */}
@@ -166,27 +166,27 @@ export default function DashboardPage() {
           const m = slot?.main;
           if (!m) return null;
           return (
-            <div key={key} className="rounded-xl border border-[#1e1e2a] bg-[#111118] p-4">
-              <p className="mb-3 text-[10px] font-bold uppercase tracking-widest text-[#3f3f52]">{label}</p>
+            <div key={key} className="rounded-2xl border border-slate-100 bg-white p-4 hover:border-blue-200 hover:shadow-sm transition-all">
+              <p className="mb-3 text-[10px] font-bold uppercase tracking-widest text-slate-400">{label}</p>
               <div className="flex items-start justify-between gap-3">
                 <div className="flex-1 min-w-0">
-                  <p className="font-bold text-white leading-snug">{m.name}</p>
-                  {m.desc && <p className="mt-0.5 text-xs text-[#9090a8] line-clamp-2">{m.desc}</p>}
-                  {m.servings && <p className="mt-1 text-xs text-[#3f3f52]">Olcek: {m.servings}</p>}
+                  <p className="font-bold text-slate-900 leading-snug">{m.name}</p>
+                  {m.desc && <p className="mt-0.5 text-xs text-slate-500 line-clamp-2">{m.desc}</p>}
+                  {m.servings && <p className="mt-1 text-xs text-slate-400">Olcek: {m.servings}</p>}
                   {Array.isArray(m.ingredients) && m.ingredients.length > 0 && (
-                    <p className="mt-1 text-xs text-[#3f3f52] line-clamp-1">
+                    <p className="mt-1 text-xs text-slate-400 line-clamp-1">
                       🛒 {m.ingredients.join(", ")}
                     </p>
                   )}
                   {m.instructions && (
-                    <p className="mt-1 text-xs text-[#3f3f52] line-clamp-2">📋 {m.instructions}</p>
+                    <p className="mt-1 text-xs text-slate-400 line-clamp-2">📋 {m.instructions}</p>
                   )}
                   <div className="mt-2">
-                    <span className={`rounded-full px-2 py-0.5 text-[10px] font-semibold ${tagColor(m.cat)}`}>
+                    <span className={`rounded-md px-2 py-0.5 text-[10px] font-semibold ${tagColor(m.cat)}`}>
                       {tagLabel(m.cat)}
                     </span>
                     {m.we && (
-                      <span className="ml-1.5 rounded-full bg-orange-500/10 px-2 py-0.5 text-[10px] font-semibold text-orange-400">
+                      <span className="ml-1.5 rounded-md bg-orange-50 px-2 py-0.5 text-[10px] font-semibold text-orange-500">
                         Hafta Sonu
                       </span>
                     )}
@@ -195,7 +195,7 @@ export default function DashboardPage() {
                 <div className="flex shrink-0 flex-col gap-1.5">
                   <button
                     onClick={() => openEdit(activeDay, key, type)}
-                    className="rounded-lg border border-[#1e1e2a] p-2 text-[#9090a8] hover:border-[#a3e635]/40 hover:text-[#a3e635] transition-colors"
+                    className="rounded-xl border border-slate-100 p-2 text-slate-300 hover:border-blue-200 hover:text-blue-500 transition-colors"
                     title="Tarif sec"
                   >
                     <Repeat2 size={14} />
@@ -205,8 +205,8 @@ export default function DashboardPage() {
 
               {/* Alternatives */}
               {slot.alts && slot.alts.length > 0 && (
-                <div className="mt-3 border-t border-[#1e1e2a] pt-3">
-                  <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-[#3f3f52]">
+                <div className="mt-3 border-t border-slate-50 pt-3">
+                  <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-slate-400">
                     Diger secenekler
                   </p>
                   <div className="flex flex-wrap gap-2">
@@ -214,14 +214,14 @@ export default function DashboardPage() {
                       <button
                         key={ai}
                         onClick={() => swapMeal(activeDay, key, alt)}
-                        className="rounded-lg border border-[#1e1e2a] bg-[#0a0a0f] px-3 py-1.5 text-xs text-[#9090a8] hover:border-[#a3e635]/30 hover:text-white transition-colors"
+                        className="rounded-lg border border-slate-100 bg-slate-50 px-3 py-1.5 text-xs text-slate-500 hover:border-blue-200 transition-colors"
                       >
                         {alt.name}
                       </button>
                     ))}
                     <button
                       onClick={() => setSwapModal({ dayIndex: activeDay, slotKey: key, type })}
-                      className="rounded-lg border border-dashed border-[#2a2a3a] px-3 py-1.5 text-xs text-[#3f3f52] hover:border-[#a3e635]/30 hover:text-[#a3e635] transition-colors"
+                      className="rounded-lg border border-dashed border-slate-200 px-3 py-1.5 text-xs text-slate-400 hover:border-blue-300 hover:text-blue-500 transition-colors"
                     >
                       Tumu...
                     </button>
@@ -244,13 +244,13 @@ export default function DashboardPage() {
             <button
               key={r.id}
               onClick={() => swapModal && swapMeal(swapModal.dayIndex, swapModal.slotKey, r)}
-              className="flex w-full flex-col rounded-lg border border-[#1e1e2a] bg-[#0a0a0f] p-3 text-left hover:border-[#a3e635]/30 transition-colors"
+              className="flex w-full flex-col rounded-lg border border-slate-100 bg-slate-50 p-3 text-left hover:border-blue-200 transition-colors"
             >
-              <span className="font-semibold text-white text-sm">{r.name}</span>
-              {r.desc && <span className="mt-0.5 text-xs text-[#9090a8]">{r.desc}</span>}
+              <span className="font-semibold text-slate-900 text-sm">{r.name}</span>
+              {r.desc && <span className="mt-0.5 text-xs text-slate-500">{r.desc}</span>}
             </button>
           ))}
-          {alts.length === 0 && <p className="text-sm text-[#9090a8]">Bu kategoride baska tarif yok.</p>}
+          {alts.length === 0 && <p className="text-sm text-slate-400">Bu kategoride baska tarif yok.</p>}
         </div>
       </Modal>
 
@@ -266,7 +266,7 @@ export default function DashboardPage() {
             placeholder="Tarif ara..."
             value={editSearch}
             onChange={(e) => setEditSearch(e.target.value)}
-            className="w-full rounded-lg border border-[#1e1e2a] bg-[#0a0a0f] px-3 py-2.5 text-sm text-white placeholder-[#3f3f52] outline-none focus:border-[#a3e635]/50"
+            className="w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm text-slate-900 placeholder-slate-400 outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-50 transition-all"
           />
           <div className="space-y-1.5 max-h-72 overflow-y-auto">
             {filteredEdit.map((r) => (
@@ -275,29 +275,29 @@ export default function DashboardPage() {
                 onClick={() => setEditSel(r.id)}
                 className={`flex w-full flex-col rounded-lg border p-3 text-left transition-colors ${
                   editSel === r.id
-                    ? "border-[#a3e635]/50 bg-[#a3e635]/5"
-                    : "border-[#1e1e2a] bg-[#0a0a0f] hover:border-[#2a2a3a]"
+                    ? "border-blue-300 bg-blue-50"
+                    : "border-slate-100 bg-slate-50 hover:border-slate-200"
                 }`}
               >
-                <span className="font-semibold text-white text-sm">{r.name}</span>
-                {r.desc && <span className="mt-0.5 text-xs text-[#9090a8]">{r.desc}</span>}
+                <span className="font-semibold text-slate-900 text-sm">{r.name}</span>
+                {r.desc && <span className="mt-0.5 text-xs text-slate-500">{r.desc}</span>}
               </button>
             ))}
             {filteredEdit.length === 0 && (
-              <p className="py-4 text-center text-sm text-[#9090a8]">Sonuc bulunamadi</p>
+              <p className="py-4 text-center text-sm text-slate-400">Sonuc bulunamadi</p>
             )}
           </div>
-          <div className="flex gap-2 pt-2 border-t border-[#1e1e2a]">
+          <div className="flex gap-2 pt-2 border-t border-slate-100">
             <button
               onClick={() => setEditModal(null)}
-              className="flex-1 rounded-lg border border-[#1e1e2a] py-2.5 text-sm text-[#9090a8] hover:text-white transition-colors"
+              className="flex-1 rounded-lg border border-slate-200 py-2.5 text-sm text-slate-500 hover:text-slate-900 transition-colors"
             >
               Iptal
             </button>
             <button
               onClick={saveEdit}
               disabled={editSel === null}
-              className="flex-1 rounded-lg bg-[#a3e635] py-2.5 text-sm font-bold text-black hover:bg-[#bef264] disabled:opacity-40 transition-all"
+              className="flex-1 rounded-lg gradient-bg py-2.5 text-sm font-bold text-white hover:opacity-90 disabled:opacity-40 transition-all"
             >
               Kaydet
             </button>

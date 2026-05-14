@@ -25,10 +25,10 @@ const TYPE_LABELS: Record<MealType, string> = {
 
 function tagColor(cat: string) {
   return cat === "protein"
-    ? "bg-blue-500/10 text-blue-400"
+    ? "bg-blue-50 text-blue-600"
     : cat === "light"
-    ? "bg-emerald-500/10 text-emerald-400"
-    : "bg-amber-500/10 text-amber-400";
+    ? "bg-emerald-50 text-emerald-600"
+    : "bg-amber-50 text-amber-600";
 }
 function tagLabel(cat: string) {
   return cat === "protein" ? "Protein" : cat === "light" ? "Hafif" : "Dengeli";
@@ -163,12 +163,12 @@ export default function RecipesPage() {
       {/* Header */}
       <div className="mb-6 flex items-center justify-between">
         <div>
-          <h1 className="text-xl font-extrabold text-white">Tarif Havuzu</h1>
-          <p className="mt-0.5 text-xs text-[#9090a8]">{recipes.length} tarif</p>
+          <h1 className="text-xl font-bold text-slate-900">Tarif Havuzu</h1>
+          <p className="mt-0.5 text-xs text-slate-400">{recipes.length} tarif</p>
         </div>
         <button
           onClick={openAdd}
-          className="inline-flex items-center gap-1.5 rounded-lg bg-[#a3e635] px-3 py-2 text-xs font-bold text-black hover:bg-[#bef264] active:scale-95 transition-all"
+          className="inline-flex items-center gap-1.5 rounded-lg gradient-bg px-3 py-2 text-xs font-bold text-white shadow-md shadow-blue-100 hover:opacity-90 active:scale-95 transition-all"
         >
           <Plus size={14} strokeWidth={2.5} />
           Yeni Tarif
@@ -177,13 +177,13 @@ export default function RecipesPage() {
 
       {/* Search */}
       <div className="relative mb-4">
-        <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-[#3f3f52]" />
+        <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
         <input
           type="text"
           placeholder="Tarif ara..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="w-full rounded-lg border border-[#1e1e2a] bg-[#111118] py-2.5 pl-8 pr-4 text-sm text-white placeholder-[#3f3f52] outline-none focus:border-[#a3e635]/50"
+          className="w-full rounded-lg border border-slate-200 bg-slate-50 py-2.5 pl-8 pr-4 text-sm text-slate-900 placeholder-slate-400 outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-50 transition-all"
         />
       </div>
 
@@ -195,8 +195,8 @@ export default function RecipesPage() {
             onClick={() => setFilter(value)}
             className={`rounded-full px-3 py-1 text-xs font-semibold transition-colors ${
               filter === value
-                ? "bg-[#a3e635] text-black"
-                : "border border-[#1e1e2a] text-[#9090a8] hover:text-white"
+                ? "gradient-bg text-white shadow-sm"
+                : "border border-slate-200 text-slate-500 hover:text-slate-700"
             }`}
           >
             {label}
@@ -209,31 +209,31 @@ export default function RecipesPage() {
         {filtered.map((r) => (
           <div
             key={r.id}
-            className="flex items-start gap-3 rounded-xl border border-[#1e1e2a] bg-[#111118] p-4"
+            className="flex items-start gap-3 rounded-2xl border border-slate-100 bg-white p-4 hover:border-blue-100 hover:shadow-sm transition-all"
           >
             <div className="flex-1 min-w-0">
               <div className="flex flex-wrap items-center gap-2 mb-1">
-                <p className="font-bold text-white text-sm leading-snug">{r.name}</p>
+                <p className="font-bold text-slate-900 text-sm leading-snug">{r.name}</p>
               </div>
-              {r.desc && <p className="text-xs text-[#9090a8] line-clamp-1">{r.desc}</p>}
-              {r.servings && <p className="mt-0.5 text-xs text-[#3f3f52]">Olcek: {r.servings}</p>}
+              {r.desc && <p className="text-xs text-slate-500 line-clamp-1">{r.desc}</p>}
+              {r.servings && <p className="mt-0.5 text-xs text-slate-400">Olcek: {r.servings}</p>}
               {Array.isArray(r.ingredients) && r.ingredients.length > 0 && (
-                <p className="mt-0.5 text-xs text-[#3f3f52] line-clamp-1">🛒 {r.ingredients.join(", ")}</p>
+                <p className="mt-0.5 text-xs text-slate-400 line-clamp-1">🛒 {r.ingredients.join(", ")}</p>
               )}
               <div className="mt-2 flex flex-wrap gap-1.5">
-                <span className={`rounded-full px-2 py-0.5 text-[10px] font-semibold ${tagColor(r.cat)}`}>
+                <span className={`rounded-md px-2 py-0.5 text-[10px] font-semibold ${tagColor(r.cat)}`}>
                   {tagLabel(r.cat)}
                 </span>
-                <span className="rounded-full bg-[#1e1e2a] px-2 py-0.5 text-[10px] text-[#9090a8]">
+                <span className="rounded-md bg-slate-100 px-2 py-0.5 text-[10px] text-slate-500">
                   {TYPE_LABELS[r.type]}
                 </span>
                 {r.we && (
-                  <span className="rounded-full bg-orange-500/10 px-2 py-0.5 text-[10px] text-orange-400">
+                  <span className="rounded-md bg-orange-50 px-2 py-0.5 text-[10px] text-orange-500">
                     H.Sonu
                   </span>
                 )}
                 {r.kid && (
-                  <span className="rounded-full bg-pink-500/10 px-2 py-0.5 text-[10px] text-pink-400">
+                  <span className="rounded-md bg-pink-50 px-2 py-0.5 text-[10px] text-pink-500">
                     Cocuk
                   </span>
                 )}
@@ -242,13 +242,13 @@ export default function RecipesPage() {
             <div className="flex shrink-0 gap-1.5">
               <button
                 onClick={() => openEdit(r)}
-                className="rounded-lg border border-[#1e1e2a] p-2 text-[#9090a8] hover:border-[#a3e635]/30 hover:text-[#a3e635] transition-colors"
+                className="rounded-xl border border-slate-100 p-2 text-slate-300 hover:border-blue-200 hover:text-blue-500 transition-colors"
               >
                 <Pencil size={13} />
               </button>
               <button
                 onClick={() => openDelete(r.id)}
-                className="rounded-lg border border-[#1e1e2a] p-2 text-[#9090a8] hover:border-red-500/30 hover:text-red-400 transition-colors"
+                className="rounded-xl border border-slate-100 p-2 text-slate-300 hover:border-red-200 hover:text-red-400 transition-colors"
               >
                 <Trash2 size={13} />
               </button>
@@ -256,7 +256,7 @@ export default function RecipesPage() {
           </div>
         ))}
         {filtered.length === 0 && (
-          <div className="py-12 text-center text-sm text-[#3f3f52]">
+          <div className="py-12 text-center text-sm text-slate-400">
             Bu kategoride tarif yok
           </div>
         )}
@@ -279,13 +279,13 @@ export default function RecipesPage() {
 
       {/* Delete confirm */}
       <Modal open={modal === "delete"} title="Tarifi Sil" onClose={() => setModal(null)}>
-        <p className="mb-5 text-sm text-[#9090a8]">
+        <p className="mb-5 text-sm text-slate-500">
           Bu tarifi silmek istediginize emin misiniz? Bu islem geri alinamaz.
         </p>
         <div className="flex gap-2">
           <button
             onClick={() => setModal(null)}
-            className="flex-1 rounded-lg border border-[#1e1e2a] py-2.5 text-sm text-[#9090a8] hover:text-white transition-colors"
+            className="flex-1 rounded-lg border border-slate-200 py-2.5 text-sm text-slate-500 hover:text-slate-900 transition-colors"
           >
             Vazgec
           </button>
@@ -389,8 +389,8 @@ function RecipeForm({
               onClick={() => setField("we", v)}
               className={`rounded-lg border px-4 py-2 text-sm font-semibold transition-colors ${
                 form.we === v
-                  ? "border-[#a3e635]/50 bg-[#a3e635]/10 text-[#a3e635]"
-                  : "border-[#1e1e2a] text-[#9090a8]"
+                  ? "border-blue-300 bg-blue-50 text-blue-600"
+                  : "border-slate-200 text-slate-500 hover:border-slate-300"
               }`}
             >
               {v ? "Evet" : "Hayir"}
@@ -400,16 +400,16 @@ function RecipeForm({
       </Field>
 
       {error && (
-        <p className="rounded-lg border border-red-500/20 bg-red-500/10 px-3 py-2 text-sm text-red-400">
+        <p className="rounded-lg border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-600">
           {error}
         </p>
       )}
 
-      <div className="flex gap-2 pt-2 border-t border-[#1e1e2a]">
-        <button onClick={onCancel} className="flex-1 rounded-lg border border-[#1e1e2a] py-2.5 text-sm text-[#9090a8] hover:text-white transition-colors">
+      <div className="flex gap-2 pt-2 border-t border-slate-100">
+        <button onClick={onCancel} className="flex-1 rounded-lg border border-slate-200 py-2.5 text-sm text-slate-500 hover:text-slate-900 transition-colors">
           Iptal
         </button>
-        <button onClick={onSave} className="flex-1 rounded-lg bg-[#a3e635] py-2.5 text-sm font-bold text-black hover:bg-[#bef264] transition-all">
+        <button onClick={onSave} className="flex-1 rounded-lg gradient-bg py-2.5 text-sm font-bold text-white hover:opacity-90 transition-all">
           Kaydet
         </button>
       </div>
@@ -418,12 +418,12 @@ function RecipeForm({
 }
 
 const inputCls =
-  "w-full rounded-lg border border-[#1e1e2a] bg-[#0a0a0f] px-3 py-2.5 text-sm text-white placeholder-[#3f3f52] outline-none focus:border-[#a3e635]/50 transition-colors";
+  "w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2.5 text-sm text-slate-900 placeholder-slate-400 outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-50 transition-all";
 
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div>
-      <label className="mb-1.5 block text-xs font-bold uppercase tracking-widest text-[#9090a8]">
+      <label className="mb-1.5 block text-xs font-bold uppercase tracking-widest text-slate-500">
         {label}
       </label>
       {children}
