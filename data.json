@@ -1,0 +1,3568 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Peynirli tost",
+      "desc": "Kasarli/beyaz peynirli tost, cay",
+      "type": "breakfast",
+      "cat": "protein",
+      "kid": false,
+      "we": false,
+      "servings": "2 Yetişkin 1 çocuk",
+      "ingredients": [
+        "Peynir",
+        "Tost ekmeği",
+        "Çay"
+      ],
+      "instructions": "Tost ekmeklerinin arasına peyniri koyup tost makinesinde pişir",
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "name": "Yumurta + zeytin + peynir",
+      "desc": "Haslama yumurta, zeytin, beyaz peynir, domates, ekmek",
+      "type": "breakfast",
+      "cat": "protein",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "2 yumurta",
+        "50g beyaz peynir",
+        "zeytin 10 adet",
+        "2 domates",
+        "ekmek"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Sucuklu yumurta",
+      "desc": "Tavada sucuklu yumurta, ekmek. 10 dk",
+      "type": "breakfast",
+      "cat": "protein",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "2 yumurta",
+        "4 dilim sucuk",
+        "tereyagi",
+        "ekmek"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Lor peyniri + bal + ceviz",
+      "desc": "Lor tabagi, bal, ceviz, ekmek",
+      "type": "breakfast",
+      "cat": "light",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "150g lor peyniri",
+        "1 yemek kasigi bal",
+        "30g ceviz",
+        "ekmek"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Kasar + domates tost",
+      "desc": "Kasarli tost, domates dilimleri, cay",
+      "type": "breakfast",
+      "cat": "light",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "2 dilim ekmek",
+        "80g kasar peynir",
+        "1 domates",
+        "tereyagi"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Avokadolu tost",
+      "desc": "Ezilmis avokado, limon, pul biber, ekmek",
+      "type": "breakfast",
+      "cat": "light",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "2 dilim ekmek",
+        "1 avokado",
+        "limon suyu",
+        "pul biber"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Sutlu yulaf + muz",
+      "desc": "Yulaf lapasi, muz ve bal ile",
+      "type": "breakfast",
+      "cat": "light",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "60g yulaf",
+        "200ml sut",
+        "1 muz",
+        "1 cay kasigi bal"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Labneli ekmek + salatalik",
+      "desc": "Labneh peyniri, salatalik, domates",
+      "type": "breakfast",
+      "cat": "light",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "2 dilim ekmek",
+        "100g labneh peyniri",
+        "1 salatalik",
+        "1 domates"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Pastirmali yumurta",
+      "desc": "Pastirma ile sahanda yumurta, ekmek",
+      "type": "breakfast",
+      "cat": "protein",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "2 yumurta",
+        "6 dilim pastirma",
+        "tereyagi",
+        "ekmek"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Peynirli omlet",
+      "desc": "Kasarli omlet, domates, ekmek",
+      "type": "breakfast",
+      "cat": "protein",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "2 yumurta",
+        "50g kasar peynir",
+        "1 domates",
+        "tereyagi",
+        "ekmek"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Tahin pekmez + peynir",
+      "desc": "Tatli-tuzlu klasik kahvalti, ekmek",
+      "type": "breakfast",
+      "cat": "balanced",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "2 yemek kasigi tahin",
+        "2 yemek kasigi pekmez",
+        "100g beyaz peynir",
+        "ekmek"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Yogurt + granola + meyve",
+      "desc": "Hafif ve besleyici kahvalti kasesi",
+      "type": "breakfast",
+      "cat": "light",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "200g yogurt",
+        "50g granola",
+        "100g mevsim meyvesi"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Pogaca + peynir + cay",
+      "desc": "Hazir pogaca isitip servis",
+      "type": "breakfast",
+      "cat": "balanced",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "3 adet pogaca",
+        "100g beyaz peynir"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Muzlu smoothie + tost",
+      "desc": "Sut, muz, yulaf smoothie",
+      "type": "breakfast",
+      "cat": "light",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "300ml sut",
+        "1 muz",
+        "2 yemek kasigi yulaf",
+        "2 dilim ekmek",
+        "50g kasar peynir",
+        "tereyagi"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Gevrek + sut + meyve",
+      "desc": "Tam tahilli gevrek, sut, dilimlennis meyve",
+      "type": "breakfast",
+      "cat": "light",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "60g tam tahilli gevrek",
+        "250ml sut",
+        "1 porsiyon mevsim meyvesi"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Menemen + serpme kahvalti",
+      "desc": "Domatesli biberli menemen, peynirler, zeytin, bal-kaymak",
+      "type": "breakfast",
+      "cat": "balanced",
+      "kid": false,
+      "we": true,
+      "ingredients": [
+        "3 yumurta",
+        "2 domates",
+        "2 biber",
+        "150g beyaz peynir",
+        "zeytin",
+        "bal",
+        "kaymak",
+        "ekmek"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Gozleme + ayran",
+      "desc": "Ispanakli ve peynirli gozleme, taze ayran",
+      "type": "breakfast",
+      "cat": "balanced",
+      "kid": false,
+      "we": true,
+      "ingredients": [
+        "4 adet yufka",
+        "300g ispanak",
+        "200g beyaz peynir",
+        "1L ayran"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Serpme kahvalti",
+      "desc": "Yumurta, peynirler, zeytin, domates, salatalik, bal",
+      "type": "breakfast",
+      "cat": "balanced",
+      "kid": false,
+      "we": true,
+      "ingredients": [
+        "3 yumurta",
+        "150g beyaz peynir",
+        "100g kasar peynir",
+        "zeytin",
+        "2 domates",
+        "2 salatalik",
+        "bal",
+        "kaymak",
+        "ekmek"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Sigara boregi + kahvalti",
+      "desc": "El acmasi veya yufkadan borek, peynir tabagi",
+      "type": "breakfast",
+      "cat": "balanced",
+      "kid": false,
+      "we": true,
+      "ingredients": [
+        "4 adet yufka",
+        "200g beyaz peynir",
+        "maydanoz",
+        "1 yumurta",
+        "sivi yag"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Pankek + meyve + bal",
+      "desc": "Ev yapimi pankek, uzerine meyve ve bal",
+      "type": "breakfast",
+      "cat": "balanced",
+      "kid": false,
+      "we": true,
+      "ingredients": [
+        "150g un",
+        "250ml sut",
+        "1 yumurta",
+        "1 cay kasigi kabartma tozu",
+        "bal",
+        "200g mevsim meyvesi",
+        "tereyagi"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Simit + peynir + cay",
+      "desc": "Taze simit, beyaz peynir, domates",
+      "type": "breakfast",
+      "cat": "balanced",
+      "kid": false,
+      "we": true,
+      "ingredients": [
+        "4 adet simit",
+        "150g beyaz peynir",
+        "2 domates"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Pogaca + su boregi + cay",
+      "desc": "Ev yapimi veya hazir pogaca, su boregi",
+      "type": "breakfast",
+      "cat": "balanced",
+      "kid": false,
+      "we": true,
+      "ingredients": [
+        "4 adet pogaca",
+        "4 dilim su boregi"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Puf borek + kahvalti tabagi",
+      "desc": "Buzdobabindan firinda 15dk, yaninda peynir",
+      "type": "breakfast",
+      "cat": "balanced",
+      "kid": false,
+      "we": true,
+      "ingredients": [
+        "6 adet puf borek",
+        "100g beyaz peynir",
+        "2 domates",
+        "zeytin"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Firinda tavuk but + bulgur",
+      "desc": "Baharatli tavuk but, bulgur pilavi, mevsim salatasi",
+      "type": "dinner",
+      "cat": "protein",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "4 adet tavuk but (800g)",
+        "300g bulgur",
+        "3 yemek kasigi zeytinyagi",
+        "kekik",
+        "pul biber",
+        "3 dis sarimsak",
+        "mevsim salatasi"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Etli kuru fasulye + pirinc",
+      "desc": "Klasik kuru fasulye, pirinc pilavi, tursu",
+      "type": "dinner",
+      "cat": "balanced",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "400g kuru fasulye",
+        "300g kusbasi et",
+        "2 yemek kasigi domates salca",
+        "1 sogan",
+        "300g pirinc",
+        "tereyagi",
+        "tursu"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Izgara balik + sebze sote",
+      "desc": "Levrek veya somon, zeytinyagli sebze sote",
+      "type": "dinner",
+      "cat": "light",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "600g levrek veya somon (4 porsiyon)",
+        "2 kabak",
+        "2 biber",
+        "zeytinyagi",
+        "limon",
+        "2 dis sarimsak"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Mercimek kofte + cacik",
+      "desc": "Ev yapimi mercimek kofte, cacik, yesil salata",
+      "type": "dinner",
+      "cat": "light",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "300g kirmizi mercimek",
+        "200g bulgur",
+        "1 sogan",
+        "1 yemek kasigi domates salca",
+        "300g yogurt",
+        "1 salatalik",
+        "2 dis sarimsak",
+        "zeytinyagi"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Kofte + makarna + salata",
+      "desc": "Ev yapimi izgara kofte, tereyagli makarna",
+      "type": "dinner",
+      "cat": "protein",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "500g kiyma",
+        "1 sogan",
+        "galeta unu",
+        "400g makarna",
+        "tereyagi",
+        "mevsim salatasi"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Tavuk sote + makarna",
+      "desc": "Sebzeli tavuk sote, makarna",
+      "type": "dinner",
+      "cat": "protein",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "400g tavuk gogsu",
+        "1 kabak",
+        "1 biber",
+        "1 sogan",
+        "1 domates",
+        "400g makarna",
+        "zeytinyagi"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Nohut yemegi + bulgur",
+      "desc": "Etli nohut, bulgur pilavi",
+      "type": "dinner",
+      "cat": "balanced",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "400g nohut",
+        "300g kusbasi et",
+        "1 sogan",
+        "2 yemek kasigi domates salca",
+        "300g bulgur",
+        "tereyagi"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Etli bezelye + pirinc",
+      "desc": "Kusbasi etli bezelye, pirinc pilavi",
+      "type": "dinner",
+      "cat": "balanced",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "400g bezelye",
+        "300g kusbasi et",
+        "1 sogan",
+        "2 domates",
+        "300g pirinc",
+        "tereyagi"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Sebzeli kofte + patates pure",
+      "desc": "Firinda sebzeli kofte, kremali patates",
+      "type": "dinner",
+      "cat": "protein",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "400g kiyma",
+        "1 sogan",
+        "1 havuc",
+        "1 kabak",
+        "1 yumurta",
+        "galeta unu",
+        "500g patates",
+        "100ml sut",
+        "tereyagi"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Tavuk sis + pirinc pilavi",
+      "desc": "Marine tavuk sis, pirinc, salata",
+      "type": "dinner",
+      "cat": "protein",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "1kg tavuk gogsu",
+        "1 sogan",
+        "2 biber",
+        "zeytinyagi",
+        "kekik",
+        "pul biber",
+        "300g pirinc",
+        "tereyagi",
+        "mevsim salatasi"
+      ],
+      "servings": "",
+      "instructions": ""
+    },
+    {
+      "id": 40,
+      "name": "Et sote + ekmek",
+      "desc": "Kusbasi et sote, sade ekmek",
+      "type": "dinner",
+      "cat": "protein",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "500g kusbasi et",
+        "1 sogan",
+        "2 biber",
+        "2 domates",
+        "zeytinyagi",
+        "pul biber",
+        "ekmek"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Kiymali pide",
+      "desc": "Ev yapimi veya disaridan kiymali pide",
+      "type": "dinner",
+      "cat": "balanced",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "400g kiyma",
+        "1 sogan",
+        "1 domates",
+        "1 biber",
+        "maydanoz",
+        "pul biber"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Somon firin + patates",
+      "desc": "Firinda somon, firin patates, salata",
+      "type": "dinner",
+      "cat": "light",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "600g somon fileto (4 porsiyon)",
+        "500g patates",
+        "zeytinyagi",
+        "limon",
+        "2 dis sarimsak",
+        "kekik",
+        "mevsim salatasi"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Karides tava + makarna",
+      "desc": "Sarimsak soslu karides, makarna",
+      "type": "dinner",
+      "cat": "light",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "400g karides",
+        "4 dis sarimsak",
+        "2 domates",
+        "400g makarna",
+        "zeytinyagi",
+        "pul biber",
+        "maydanoz"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Ton balikli salata",
+      "desc": "Doyurucu salata kasesi, ton balik",
+      "type": "dinner",
+      "cat": "light",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "3 kutu ton baligi",
+        "1 bas marul",
+        "2 domates",
+        "1 salatalik",
+        "1 kutu misir",
+        "zeytinyagi",
+        "limon"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Kisir + ayran",
+      "desc": "Bol yesillikli kisir, ayran",
+      "type": "dinner",
+      "cat": "light",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "300g ince bulgur",
+        "1 sogan",
+        "2 domates",
+        "1 demet maydanoz",
+        "limon suyu",
+        "nar eksisi",
+        "zeytinyagi",
+        "1L ayran"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Yaprak sarma + yogurt",
+      "desc": "Zeytinyagli pirinc dolgulu yaprak sarma",
+      "type": "dinner",
+      "cat": "light",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "30-40 adet asma yaprak",
+        "200g pirinc",
+        "2 sogan",
+        "1 yemek kasigi domates salca",
+        "zeytinyagi",
+        "limon",
+        "nane",
+        "300g yogurt"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Ispanak yemegi + yogurt",
+      "desc": "Kiymali ispanak, pirinc pilavi",
+      "type": "dinner",
+      "cat": "balanced",
+      "kid": false,
+      "we": false,
+      "ingredients": [
+        "500g ispanak",
+        "300g kiyma",
+        "1 sogan",
+        "1 yemek kasigi domates salca",
+        "100g pirinc",
+        "zeytinyagi",
+        "300g yogurt"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Etli sebze guvec",
+      "desc": "Kusbasi et, patates, biber, patlican, domates",
+      "type": "dinner",
+      "cat": "protein",
+      "kid": false,
+      "we": true,
+      "ingredients": [
+        "500g kusbasi et",
+        "3 patates",
+        "2 biber",
+        "2 patlican",
+        "3 domates",
+        "1 sogan",
+        "zeytinyagi",
+        "1 yemek kasigi salca"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Karniyarik + pirinc pilavi",
+      "desc": "Kiymali karniyarik, tereyagli pirinc, yogurt",
+      "type": "dinner",
+      "cat": "balanced",
+      "kid": false,
+      "we": true,
+      "ingredients": [
+        "4 patlican",
+        "400g kiyma",
+        "1 sogan",
+        "2 domates",
+        "2 biber",
+        "2 dis sarimsak",
+        "domates salca",
+        "300g pirinc",
+        "tereyagi",
+        "300g yogurt"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Kuzu tandir + pirinc",
+      "desc": "Yavas pisen kuzu tandir, pirinc pilavi",
+      "type": "dinner",
+      "cat": "protein",
+      "kid": false,
+      "we": true,
+      "ingredients": [
+        "1.5kg kuzu but veya omuz",
+        "1 bas sarimsak",
+        "kekik",
+        "pul biber",
+        "zeytinyagi",
+        "400g pirinc",
+        "tereyagi"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Ali Nazik kebabi",
+      "desc": "Yogurt ustunde kusbasi et, patlican pure",
+      "type": "dinner",
+      "cat": "protein",
+      "kid": false,
+      "we": true,
+      "ingredients": [
+        "500g kusbasi et",
+        "4 patlican",
+        "300g yogurt",
+        "3 dis sarimsak",
+        "tereyagi",
+        "pul biber"
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Etli bamya + pirinc",
+      "desc": "Etli bamya yemegi, pirinc pilavi",
+      "type": "dinner",
+      "cat": "balanced",
+      "kid": false,
+      "we": true,
+      "ingredients": [
+        "500g bamya",
+        "300g kusbasi et",
+        "1 sogan",
+        "2 domates",
+        "limon suyu",
+        "zeytinyagi",
+        "300g pirinc",
+        "tereyagi"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Mantarli tavuk sac",
+      "desc": "Tavuk sac kavurma, mantar, biber, salata",
+      "type": "dinner",
+      "cat": "protein",
+      "kid": false,
+      "we": true,
+      "ingredients": [
+        "500g tavuk gogsu",
+        "300g mantar",
+        "2 biber",
+        "1 sogan",
+        "zeytinyagi",
+        "2 dis sarimsak",
+        "mevsim salatasi"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Imam bayildi + bulgur",
+      "desc": "Zeytinyagli imam bayildi, bulgur pilavi",
+      "type": "dinner",
+      "cat": "light",
+      "kid": false,
+      "we": true,
+      "ingredients": [
+        "4 patlican",
+        "2 sogan",
+        "3 domates",
+        "4 dis sarimsak",
+        "100ml zeytinyagi",
+        "maydanoz",
+        "300g bulgur"
+      ]
+    },
+    {
+      "id": 60,
+      "name": "Yumusak yumurta + peynir + ekmek",
+      "desc": "Cocuk kahvaltisi",
+      "type": "kid-breakfast",
+      "cat": "protein",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "2 yumurta",
+        "50g beyaz peynir",
+        "2 dilim ekmek"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Yulaf lapasi + muz ezme",
+      "desc": "Sutlu yulaf, ezilmis muz",
+      "type": "kid-breakfast",
+      "cat": "balanced",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "50g yulaf",
+        "250ml sut",
+        "1 muz"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Peynirli tost + meyve",
+      "desc": "Minik tost, mevsim meyvesi",
+      "type": "kid-breakfast",
+      "cat": "balanced",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "2 dilim ekmek",
+        "50g kasar peynir",
+        "100g mevsim meyvesi",
+        "tereyagi"
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Peynirli omlet + ekmek",
+      "desc": "Yumusak omlet, ekmek",
+      "type": "kid-breakfast",
+      "cat": "protein",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "2 yumurta",
+        "30g kasar peynir",
+        "tereyagi",
+        "1 dilim ekmek"
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Sutlu muhallebi + meyve",
+      "desc": "Ev yapimi muhallebi, meyve",
+      "type": "kid-breakfast",
+      "cat": "light",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "500ml sut",
+        "3 yemek kasigi nisasta",
+        "3 yemek kasigi seker",
+        "100g meyve"
+      ]
+    },
+    {
+      "id": 65,
+      "name": "Lor peyniri + bal + ekmek",
+      "desc": "Yumusak lor, bal, ekmek",
+      "type": "kid-breakfast",
+      "cat": "balanced",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "100g lor peyniri",
+        "1 cay kasigi bal",
+        "2 dilim ekmek"
+      ]
+    },
+    {
+      "id": 66,
+      "name": "Yogurt + muz + bal",
+      "desc": "Karistirmali kase",
+      "type": "kid-breakfast",
+      "cat": "light",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "150g yogurt",
+        "1 muz",
+        "1 cay kasigi bal"
+      ]
+    },
+    {
+      "id": 67,
+      "name": "Peynirli ekmek + meyve",
+      "desc": "Beyaz peynirli ekmek, dilim meyve",
+      "type": "kid-breakfast",
+      "cat": "balanced",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "2 dilim ekmek",
+        "50g beyaz peynir",
+        "100g mevsim meyvesi"
+      ]
+    },
+    {
+      "id": 68,
+      "name": "Yumusak menemen + peynir",
+      "desc": "Az baharatli yumusak menemen",
+      "type": "kid-breakfast",
+      "cat": "balanced",
+      "kid": true,
+      "we": true,
+      "ingredients": [
+        "2 yumurta",
+        "1 domates",
+        "az biber",
+        "50g beyaz peynir",
+        "zeytinyagi",
+        "2 dilim ekmek"
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Minik pankek + meyve + yogurt",
+      "desc": "Kucuk pankekler, meyve, yogurt",
+      "type": "kid-breakfast",
+      "cat": "balanced",
+      "kid": true,
+      "we": true,
+      "ingredients": [
+        "100g un",
+        "200ml sut",
+        "1 yumurta",
+        "kabartma tozu",
+        "tereyagi",
+        "150g mevsim meyvesi",
+        "100g yogurt"
+      ]
+    },
+    {
+      "id": 70,
+      "name": "Mercimek corbasi + yogurt",
+      "desc": "Kirmizi mercimek corbasi, yogurt",
+      "type": "kid-lunch",
+      "cat": "balanced",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "200g kirmizi mercimek",
+        "1 sogan",
+        "1 havuc",
+        "tereyagi",
+        "150g yogurt",
+        "2 dilim ekmek"
+      ]
+    },
+    {
+      "id": 71,
+      "name": "Sebzeli makarna + peynir",
+      "desc": "Minik makarna, rendelennis peynir",
+      "type": "kid-lunch",
+      "cat": "balanced",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "200g minik makarna",
+        "1 kabak",
+        "1 havuc",
+        "tereyagi",
+        "50g kasar peynir"
+      ]
+    },
+    {
+      "id": 72,
+      "name": "Tavuk suyuna sehriye corbasi",
+      "desc": "Hafif tavuk suyu corbasi",
+      "type": "kid-lunch",
+      "cat": "light",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "1/4 tavuk",
+        "100g sehriye",
+        "1 havuc",
+        "1 sogan"
+      ]
+    },
+    {
+      "id": 73,
+      "name": "Yogurtlu ispanak + pirinc",
+      "desc": "Ispanak yemegi, pirinc, yogurt",
+      "type": "kid-lunch",
+      "cat": "balanced",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "300g ispanak",
+        "150g pirinc",
+        "1 sogan",
+        "zeytinyagi",
+        "200g yogurt"
+      ]
+    },
+    {
+      "id": 74,
+      "name": "Patates pure + kofte (kucuk)",
+      "desc": "Minik kofteler, patates puresi",
+      "type": "kid-lunch",
+      "cat": "protein",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "200g kiyma",
+        "1/2 sogan",
+        "galeta unu",
+        "400g patates",
+        "50ml sut",
+        "tereyagi"
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Sebze pure corbasi + ekmek",
+      "desc": "Karisik sebze puresi, yumusak ekmek",
+      "type": "kid-lunch",
+      "cat": "light",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "2 patates",
+        "2 havuc",
+        "1 kabak",
+        "1 sogan",
+        "tereyagi",
+        "100ml sut",
+        "2 dilim ekmek"
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Peynirli makarna + yogurt",
+      "desc": "Peynirli makarna, yaninda yogurt",
+      "type": "kid-lunch",
+      "cat": "balanced",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "200g minik makarna",
+        "80g kasar peynir",
+        "tereyagi",
+        "150g yogurt"
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Kabak mucver (firinda)",
+      "desc": "Firinda kabak mucveri",
+      "type": "kid-lunch",
+      "cat": "light",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "400g kabak",
+        "2 yumurta",
+        "3 yemek kasigi un",
+        "50g kasar peynir",
+        "dereotu",
+        "zeytinyagi"
+      ]
+    },
+    {
+      "id": 78,
+      "name": "Tavuklu pirinc corbasi",
+      "desc": "Tavuk parcali pirinc corbasi",
+      "type": "kid-lunch",
+      "cat": "balanced",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "1/4 tavuk",
+        "100g pirinc",
+        "1 havuc",
+        "1 sogan",
+        "limon suyu",
+        "1 yumurta sarisi"
+      ]
+    },
+    {
+      "id": 79,
+      "name": "Sebzeli eriste + peynir",
+      "desc": "Ev eristesi, sebze, peynir",
+      "type": "kid-lunch",
+      "cat": "balanced",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "200g eriste",
+        "1 havuc",
+        "1 kabak",
+        "tereyagi",
+        "50g kasar peynir"
+      ]
+    },
+    {
+      "id": 80,
+      "name": "Dogranmis tavuk + bulgur + havuc pure",
+      "desc": "Yumusak tavuk, bulgur, havuc",
+      "type": "kid-dinner",
+      "cat": "protein",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "300g tavuk gogsu",
+        "200g bulgur",
+        "3 havuc",
+        "tereyagi",
+        "zeytinyagi"
+      ]
+    },
+    {
+      "id": 81,
+      "name": "Kuru fasulye (ezilmis) + pirinc",
+      "desc": "Ezilmis fasulye, pirinc",
+      "type": "kid-dinner",
+      "cat": "balanced",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "300g kuru fasulye",
+        "1 sogan",
+        "1 yemek kasigi domates salca",
+        "zeytinyagi",
+        "200g pirinc",
+        "tereyagi"
+      ]
+    },
+    {
+      "id": 82,
+      "name": "Buharla pismis balik + patates pure",
+      "desc": "Yumusak balik, patates puresi",
+      "type": "kid-dinner",
+      "cat": "protein",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "400g beyaz et balik fileto",
+        "400g patates",
+        "50ml sut",
+        "tereyagi",
+        "limon"
+      ]
+    },
+    {
+      "id": 83,
+      "name": "Mercimek corbasi + ekmek + yogurt",
+      "desc": "Mercimek corbasi, ekmek, yogurt",
+      "type": "kid-dinner",
+      "cat": "balanced",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "200g kirmizi mercimek",
+        "1 sogan",
+        "1 havuc",
+        "tereyagi",
+        "2 dilim ekmek",
+        "150g yogurt"
+      ]
+    },
+    {
+      "id": 84,
+      "name": "Domates soslu makarna + yogurt",
+      "desc": "Domates sos, makarna, yogurt",
+      "type": "kid-dinner",
+      "cat": "balanced",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "200g minik makarna",
+        "3 domates",
+        "1/2 sogan",
+        "zeytinyagi",
+        "150g yogurt"
+      ]
+    },
+    {
+      "id": 85,
+      "name": "Sebzeli pilav + yogurt",
+      "desc": "Karisik sebzeli pirinc, yogurt",
+      "type": "kid-dinner",
+      "cat": "balanced",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "200g pirinc",
+        "1 havuc",
+        "100g bezelye",
+        "tereyagi",
+        "150g yogurt"
+      ]
+    },
+    {
+      "id": 86,
+      "name": "Firinda minik kofte + patates pure",
+      "desc": "Kucuk kofteler, patates puresi",
+      "type": "kid-dinner",
+      "cat": "protein",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "300g kiyma",
+        "1/2 sogan",
+        "galeta unu",
+        "400g patates",
+        "50ml sut",
+        "tereyagi"
+      ]
+    },
+    {
+      "id": 87,
+      "name": "Sebzeli tavuk sote (yumusak)",
+      "desc": "Yumusak pisirilis tavuk sote",
+      "type": "kid-dinner",
+      "cat": "protein",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "300g tavuk gogsu",
+        "1 kabak",
+        "1 havuc",
+        "1/2 sogan",
+        "zeytinyagi",
+        "tereyagi"
+      ]
+    },
+    {
+      "id": 88,
+      "name": "Havuc-kabak pure + pirinc",
+      "desc": "Sebze puresi, pirinc",
+      "type": "kid-dinner",
+      "cat": "light",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "3 havuc",
+        "2 kabak",
+        "200g pirinc",
+        "tereyagi",
+        "zeytinyagi"
+      ]
+    },
+    {
+      "id": 89,
+      "name": "Ispanakli makarna + peynir",
+      "desc": "Ispanakli makarna, peynir",
+      "type": "kid-dinner",
+      "cat": "balanced",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "200g minik makarna",
+        "200g ispanak",
+        "1 dis sarimsak",
+        "zeytinyagi",
+        "50g kasar peynir"
+      ]
+    },
+    {
+      "id": 90,
+      "name": "Patatesli yumurta + salata",
+      "desc": "Patatesli yumurta, mevsim salatasi",
+      "type": "kid-dinner",
+      "cat": "balanced",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "3 yumurta",
+        "2 patates",
+        "1/2 sogan",
+        "zeytinyagi",
+        "mevsim salatasi"
+      ]
+    },
+    {
+      "id": 91,
+      "name": "Sebzeli bulgur pilavi + yogurt",
+      "desc": "Sebzeli bulgur, yogurt",
+      "type": "kid-dinner",
+      "cat": "balanced",
+      "kid": true,
+      "we": false,
+      "ingredients": [
+        "200g bulgur",
+        "1 havuc",
+        "1 kabak",
+        "1/2 sogan",
+        "tereyagi",
+        "150g yogurt"
+      ]
+    },
+    {
+      "id": 92,
+      "name": "Yumusak sebze guvec + ekmek",
+      "desc": "Yavas pismis sebze guvec",
+      "type": "kid-dinner",
+      "cat": "balanced",
+      "kid": true,
+      "we": true,
+      "ingredients": [
+        "2 patates",
+        "2 havuc",
+        "1 kabak",
+        "1 sogan",
+        "2 domates",
+        "zeytinyagi",
+        "2 dilim ekmek"
+      ]
+    },
+    {
+      "id": 93,
+      "name": "Etli makarna (yumusak)",
+      "desc": "Kiymali yumusak makarna",
+      "type": "kid-dinner",
+      "cat": "protein",
+      "kid": true,
+      "we": true,
+      "ingredients": [
+        "250g kiyma",
+        "250g minik makarna",
+        "1/2 sogan",
+        "1 yemek kasigi domates salca",
+        "zeytinyagi"
+      ]
+    },
+    {
+      "id": 94,
+      "name": "Kiymali patlican pure + pirinc",
+      "desc": "Patlican pure, kiyma, pirinc, yogurt",
+      "type": "kid-dinner",
+      "cat": "balanced",
+      "kid": true,
+      "we": true,
+      "ingredients": [
+        "2 patlican",
+        "250g kiyma",
+        "1/2 sogan",
+        "1 domates",
+        "200g pirinc",
+        "150g yogurt",
+        "zeytinyagi"
+      ]
+    },
+    {
+      "id": 95,
+      "name": "Peynirli gozleme (yumusak)",
+      "desc": "Yumusak gozleme, meyve",
+      "type": "kid-breakfast",
+      "cat": "balanced",
+      "kid": true,
+      "we": true,
+      "ingredients": [
+        "2 adet yufka",
+        "100g kasar peynir",
+        "tereyagi",
+        "150g mevsim meyvesi"
+      ]
+    },
+    {
+      "id": 96,
+      "name": "Nohut yemeği + pilav",
+      "desc": "Salçalı nohut yemeği, pilav",
+      "servings": "2 Yetişkin",
+      "ingredients": [
+        "500 gr nohut",
+        "200 gr pilav",
+        "1 adet soğan",
+        "2 yemek kaşığı dometes salçası",
+        "1 adet domates"
+      ],
+      "instructions": "",
+      "type": "dinner",
+      "cat": "balanced",
+      "kid": false,
+      "we": false
+    },
+    {
+      "id": 97,
+      "name": "Pizza",
+      "desc": "",
+      "servings": "",
+      "ingredients": [
+        "Un",
+        "Sucuk",
+        "Dometes sos",
+        "Fesleğen"
+      ],
+      "instructions": "",
+      "type": "dinner",
+      "cat": "balanced",
+      "kid": false,
+      "we": false
+    }
+  ],
+  "weekPlan": {
+    "week": 20,
+    "days": [
+      {
+        "day": "Pazartesi",
+        "date": "11 Mayıs",
+        "isWe": false,
+        "bf": {
+          "main": {
+            "id": 8,
+            "name": "Labneli ekmek + salatalik",
+            "desc": "Labneh peyniri, salatalik, domates",
+            "type": "breakfast",
+            "cat": "light",
+            "kid": false,
+            "we": false,
+            "ingredients": [
+              "2 dilim ekmek",
+              "100g labneh peyniri",
+              "1 salatalik",
+              "1 domates"
+            ]
+          },
+          "alts": [
+            {
+              "id": 17,
+              "name": "Gozleme + ayran",
+              "desc": "Ispanakli ve peynirli gozleme, taze ayran",
+              "type": "breakfast",
+              "cat": "balanced",
+              "kid": false,
+              "we": true,
+              "ingredients": [
+                "4 adet yufka",
+                "300g ispanak",
+                "200g beyaz peynir",
+                "1L ayran"
+              ]
+            },
+            {
+              "id": 1,
+              "name": "Peynirli tost",
+              "desc": "Kasarli/beyaz peynirli tost, cay",
+              "type": "breakfast",
+              "cat": "protein",
+              "kid": false,
+              "we": false,
+              "servings": "2 Yetişkin 1 çocuk",
+              "ingredients": [
+                "Peynir",
+                "Tost ekmeği",
+                "Çay"
+              ],
+              "instructions": "Tost ekmeklerinin arasına peyniri koyup tost makinesinde pişir",
+              "notes": ""
+            },
+            {
+              "id": 19,
+              "name": "Sigara boregi + kahvalti",
+              "desc": "El acmasi veya yufkadan borek, peynir tabagi",
+              "type": "breakfast",
+              "cat": "balanced",
+              "kid": false,
+              "we": true,
+              "ingredients": [
+                "4 adet yufka",
+                "200g beyaz peynir",
+                "maydanoz",
+                "1 yumurta",
+                "sivi yag"
+              ]
+            }
+          ]
+        },
+        "dn": {
+          "main": {
+            "id": 32,
+            "name": "Izgara balik + sebze sote",
+            "desc": "Levrek veya somon, zeytinyagli sebze sote",
+            "type": "dinner",
+            "cat": "light",
+            "kid": false,
+            "we": false,
+            "ingredients": [
+              "600g levrek veya somon (4 porsiyon)",
+              "2 kabak",
+              "2 biber",
+              "zeytinyagi",
+              "limon",
+              "2 dis sarimsak"
+            ]
+          },
+          "alts": [
+            {
+              "id": 40,
+              "name": "Et sote + ekmek",
+              "desc": "Kusbasi et sote, sade ekmek",
+              "type": "dinner",
+              "cat": "protein",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "500g kusbasi et",
+                "1 sogan",
+                "2 biber",
+                "2 domates",
+                "zeytinyagi",
+                "pul biber",
+                "ekmek"
+              ]
+            },
+            {
+              "id": 30,
+              "name": "Firinda tavuk but + bulgur",
+              "desc": "Baharatli tavuk but, bulgur pilavi, mevsim salatasi",
+              "type": "dinner",
+              "cat": "protein",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "4 adet tavuk but (800g)",
+                "300g bulgur",
+                "3 yemek kasigi zeytinyagi",
+                "kekik",
+                "pul biber",
+                "3 dis sarimsak",
+                "mevsim salatasi"
+              ]
+            },
+            {
+              "id": 97,
+              "name": "Pizza",
+              "desc": "",
+              "servings": "",
+              "ingredients": [
+                "Un",
+                "Sucuk",
+                "Dometes sos",
+                "Fesleğen"
+              ],
+              "instructions": "",
+              "type": "dinner",
+              "cat": "balanced",
+              "kid": false,
+              "we": false
+            }
+          ]
+        },
+        "kidS": {
+          "main": {
+            "id": 95,
+            "name": "Peynirli gozleme (yumusak)",
+            "desc": "Yumusak gozleme, meyve",
+            "type": "kid-breakfast",
+            "cat": "balanced",
+            "kid": true,
+            "we": true,
+            "ingredients": [
+              "2 adet yufka",
+              "100g kasar peynir",
+              "tereyagi",
+              "150g mevsim meyvesi"
+            ]
+          },
+          "alts": [
+            {
+              "id": 61,
+              "name": "Yulaf lapasi + muz ezme",
+              "desc": "Sutlu yulaf, ezilmis muz",
+              "type": "kid-breakfast",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "50g yulaf",
+                "250ml sut",
+                "1 muz"
+              ]
+            },
+            {
+              "id": 60,
+              "name": "Yumusak yumurta + peynir + ekmek",
+              "desc": "Cocuk kahvaltisi",
+              "type": "kid-breakfast",
+              "cat": "protein",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "2 yumurta",
+                "50g beyaz peynir",
+                "2 dilim ekmek"
+              ]
+            }
+          ]
+        },
+        "kidL": {
+          "main": {
+            "id": 70,
+            "name": "Mercimek corbasi + yogurt",
+            "desc": "Kirmizi mercimek corbasi, yogurt",
+            "type": "kid-lunch",
+            "cat": "balanced",
+            "kid": true,
+            "we": false,
+            "ingredients": [
+              "200g kirmizi mercimek",
+              "1 sogan",
+              "1 havuc",
+              "tereyagi",
+              "150g yogurt",
+              "2 dilim ekmek"
+            ]
+          },
+          "alts": [
+            {
+              "id": 74,
+              "name": "Patates pure + kofte (kucuk)",
+              "desc": "Minik kofteler, patates puresi",
+              "type": "kid-lunch",
+              "cat": "protein",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "200g kiyma",
+                "1/2 sogan",
+                "galeta unu",
+                "400g patates",
+                "50ml sut",
+                "tereyagi"
+              ]
+            },
+            {
+              "id": 73,
+              "name": "Yogurtlu ispanak + pirinc",
+              "desc": "Ispanak yemegi, pirinc, yogurt",
+              "type": "kid-lunch",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "300g ispanak",
+                "150g pirinc",
+                "1 sogan",
+                "zeytinyagi",
+                "200g yogurt"
+              ]
+            }
+          ]
+        },
+        "kidD": {
+          "main": {
+            "id": 88,
+            "name": "Havuc-kabak pure + pirinc",
+            "desc": "Sebze puresi, pirinc",
+            "type": "kid-dinner",
+            "cat": "light",
+            "kid": true,
+            "we": false,
+            "ingredients": [
+              "3 havuc",
+              "2 kabak",
+              "200g pirinc",
+              "tereyagi",
+              "zeytinyagi"
+            ]
+          },
+          "alts": [
+            {
+              "id": 85,
+              "name": "Sebzeli pilav + yogurt",
+              "desc": "Karisik sebzeli pirinc, yogurt",
+              "type": "kid-dinner",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "200g pirinc",
+                "1 havuc",
+                "100g bezelye",
+                "tereyagi",
+                "150g yogurt"
+              ]
+            },
+            {
+              "id": 93,
+              "name": "Etli makarna (yumusak)",
+              "desc": "Kiymali yumusak makarna",
+              "type": "kid-dinner",
+              "cat": "protein",
+              "kid": true,
+              "we": true,
+              "ingredients": [
+                "250g kiyma",
+                "250g minik makarna",
+                "1/2 sogan",
+                "1 yemek kasigi domates salca",
+                "zeytinyagi"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "day": "Sali",
+        "date": "12 Mayıs",
+        "isWe": false,
+        "bf": {
+          "main": {
+            "id": 10,
+            "name": "Peynirli omlet",
+            "desc": "Kasarli omlet, domates, ekmek",
+            "type": "breakfast",
+            "cat": "protein",
+            "kid": false,
+            "we": false,
+            "ingredients": [
+              "2 yumurta",
+              "50g kasar peynir",
+              "1 domates",
+              "tereyagi",
+              "ekmek"
+            ]
+          },
+          "alts": [
+            {
+              "id": 1,
+              "name": "Peynirli tost",
+              "desc": "Kasarli/beyaz peynirli tost, cay",
+              "type": "breakfast",
+              "cat": "protein",
+              "kid": false,
+              "we": false,
+              "servings": "2 Yetişkin 1 çocuk",
+              "ingredients": [
+                "Peynir",
+                "Tost ekmeği",
+                "Çay"
+              ],
+              "instructions": "Tost ekmeklerinin arasına peyniri koyup tost makinesinde pişir",
+              "notes": ""
+            },
+            {
+              "id": 17,
+              "name": "Gozleme + ayran",
+              "desc": "Ispanakli ve peynirli gozleme, taze ayran",
+              "type": "breakfast",
+              "cat": "balanced",
+              "kid": false,
+              "we": true,
+              "ingredients": [
+                "4 adet yufka",
+                "300g ispanak",
+                "200g beyaz peynir",
+                "1L ayran"
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Yumurta + zeytin + peynir",
+              "desc": "Haslama yumurta, zeytin, beyaz peynir, domates, ekmek",
+              "type": "breakfast",
+              "cat": "protein",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "2 yumurta",
+                "50g beyaz peynir",
+                "zeytin 10 adet",
+                "2 domates",
+                "ekmek"
+              ]
+            }
+          ]
+        },
+        "dn": {
+          "main": {
+            "id": 51,
+            "name": "Ali Nazik kebabi",
+            "desc": "Yogurt ustunde kusbasi et, patlican pure",
+            "type": "dinner",
+            "cat": "protein",
+            "kid": false,
+            "we": true,
+            "ingredients": [
+              "500g kusbasi et",
+              "4 patlican",
+              "300g yogurt",
+              "3 dis sarimsak",
+              "tereyagi",
+              "pul biber"
+            ]
+          },
+          "alts": [
+            {
+              "id": 42,
+              "name": "Somon firin + patates",
+              "desc": "Firinda somon, firin patates, salata",
+              "type": "dinner",
+              "cat": "light",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "600g somon fileto (4 porsiyon)",
+                "500g patates",
+                "zeytinyagi",
+                "limon",
+                "2 dis sarimsak",
+                "kekik",
+                "mevsim salatasi"
+              ]
+            },
+            {
+              "id": 32,
+              "name": "Izgara balik + sebze sote",
+              "desc": "Levrek veya somon, zeytinyagli sebze sote",
+              "type": "dinner",
+              "cat": "light",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "600g levrek veya somon (4 porsiyon)",
+                "2 kabak",
+                "2 biber",
+                "zeytinyagi",
+                "limon",
+                "2 dis sarimsak"
+              ]
+            },
+            {
+              "id": 46,
+              "name": "Yaprak sarma + yogurt",
+              "desc": "Zeytinyagli pirinc dolgulu yaprak sarma",
+              "type": "dinner",
+              "cat": "light",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "30-40 adet asma yaprak",
+                "200g pirinc",
+                "2 sogan",
+                "1 yemek kasigi domates salca",
+                "zeytinyagi",
+                "limon",
+                "nane",
+                "300g yogurt"
+              ]
+            }
+          ]
+        },
+        "kidS": {
+          "main": {
+            "id": 62,
+            "name": "Peynirli tost + meyve",
+            "desc": "Minik tost, mevsim meyvesi",
+            "type": "kid-breakfast",
+            "cat": "balanced",
+            "kid": true,
+            "we": false,
+            "ingredients": [
+              "2 dilim ekmek",
+              "50g kasar peynir",
+              "100g mevsim meyvesi",
+              "tereyagi"
+            ]
+          },
+          "alts": [
+            {
+              "id": 68,
+              "name": "Yumusak menemen + peynir",
+              "desc": "Az baharatli yumusak menemen",
+              "type": "kid-breakfast",
+              "cat": "balanced",
+              "kid": true,
+              "we": true,
+              "ingredients": [
+                "2 yumurta",
+                "1 domates",
+                "az biber",
+                "50g beyaz peynir",
+                "zeytinyagi",
+                "2 dilim ekmek"
+              ]
+            },
+            {
+              "id": 64,
+              "name": "Sutlu muhallebi + meyve",
+              "desc": "Ev yapimi muhallebi, meyve",
+              "type": "kid-breakfast",
+              "cat": "light",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "500ml sut",
+                "3 yemek kasigi nisasta",
+                "3 yemek kasigi seker",
+                "100g meyve"
+              ]
+            }
+          ]
+        },
+        "kidL": {
+          "main": {
+            "id": 74,
+            "name": "Patates pure + kofte (kucuk)",
+            "desc": "Minik kofteler, patates puresi",
+            "type": "kid-lunch",
+            "cat": "protein",
+            "kid": true,
+            "we": false,
+            "ingredients": [
+              "200g kiyma",
+              "1/2 sogan",
+              "galeta unu",
+              "400g patates",
+              "50ml sut",
+              "tereyagi"
+            ]
+          },
+          "alts": [
+            {
+              "id": 73,
+              "name": "Yogurtlu ispanak + pirinc",
+              "desc": "Ispanak yemegi, pirinc, yogurt",
+              "type": "kid-lunch",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "300g ispanak",
+                "150g pirinc",
+                "1 sogan",
+                "zeytinyagi",
+                "200g yogurt"
+              ]
+            },
+            {
+              "id": 70,
+              "name": "Mercimek corbasi + yogurt",
+              "desc": "Kirmizi mercimek corbasi, yogurt",
+              "type": "kid-lunch",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "200g kirmizi mercimek",
+                "1 sogan",
+                "1 havuc",
+                "tereyagi",
+                "150g yogurt",
+                "2 dilim ekmek"
+              ]
+            }
+          ]
+        },
+        "kidD": {
+          "main": {
+            "id": 86,
+            "name": "Firinda minik kofte + patates pure",
+            "desc": "Kucuk kofteler, patates puresi",
+            "type": "kid-dinner",
+            "cat": "protein",
+            "kid": true,
+            "we": false,
+            "ingredients": [
+              "300g kiyma",
+              "1/2 sogan",
+              "galeta unu",
+              "400g patates",
+              "50ml sut",
+              "tereyagi"
+            ]
+          },
+          "alts": [
+            {
+              "id": 80,
+              "name": "Dogranmis tavuk + bulgur + havuc pure",
+              "desc": "Yumusak tavuk, bulgur, havuc",
+              "type": "kid-dinner",
+              "cat": "protein",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "300g tavuk gogsu",
+                "200g bulgur",
+                "3 havuc",
+                "tereyagi",
+                "zeytinyagi"
+              ]
+            },
+            {
+              "id": 81,
+              "name": "Kuru fasulye (ezilmis) + pirinc",
+              "desc": "Ezilmis fasulye, pirinc",
+              "type": "kid-dinner",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "300g kuru fasulye",
+                "1 sogan",
+                "1 yemek kasigi domates salca",
+                "zeytinyagi",
+                "200g pirinc",
+                "tereyagi"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "day": "Carsamba",
+        "date": "13 Mayıs",
+        "isWe": false,
+        "bf": {
+          "main": {
+            "id": 14,
+            "name": "Muzlu smoothie + tost",
+            "desc": "Sut, muz, yulaf smoothie",
+            "type": "breakfast",
+            "cat": "light",
+            "kid": false,
+            "we": false,
+            "ingredients": [
+              "300ml sut",
+              "1 muz",
+              "2 yemek kasigi yulaf",
+              "2 dilim ekmek",
+              "50g kasar peynir",
+              "tereyagi"
+            ]
+          },
+          "alts": [
+            {
+              "id": 3,
+              "name": "Sucuklu yumurta",
+              "desc": "Tavada sucuklu yumurta, ekmek. 10 dk",
+              "type": "breakfast",
+              "cat": "protein",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "2 yumurta",
+                "4 dilim sucuk",
+                "tereyagi",
+                "ekmek"
+              ]
+            },
+            {
+              "id": 4,
+              "name": "Lor peyniri + bal + ceviz",
+              "desc": "Lor tabagi, bal, ceviz, ekmek",
+              "type": "breakfast",
+              "cat": "light",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "150g lor peyniri",
+                "1 yemek kasigi bal",
+                "30g ceviz",
+                "ekmek"
+              ]
+            },
+            {
+              "id": 5,
+              "name": "Kasar + domates tost",
+              "desc": "Kasarli tost, domates dilimleri, cay",
+              "type": "breakfast",
+              "cat": "light",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "2 dilim ekmek",
+                "80g kasar peynir",
+                "1 domates",
+                "tereyagi"
+              ]
+            }
+          ]
+        },
+        "dn": {
+          "main": {
+            "id": 47,
+            "name": "Ispanak yemegi + yogurt",
+            "desc": "Kiymali ispanak, pirinc pilavi",
+            "type": "dinner",
+            "cat": "balanced",
+            "kid": false,
+            "we": false,
+            "ingredients": [
+              "500g ispanak",
+              "300g kiyma",
+              "1 sogan",
+              "1 yemek kasigi domates salca",
+              "100g pirinc",
+              "zeytinyagi",
+              "300g yogurt"
+            ]
+          },
+          "alts": [
+            {
+              "id": 40,
+              "name": "Et sote + ekmek",
+              "desc": "Kusbasi et sote, sade ekmek",
+              "type": "dinner",
+              "cat": "protein",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "500g kusbasi et",
+                "1 sogan",
+                "2 biber",
+                "2 domates",
+                "zeytinyagi",
+                "pul biber",
+                "ekmek"
+              ]
+            },
+            {
+              "id": 42,
+              "name": "Somon firin + patates",
+              "desc": "Firinda somon, firin patates, salata",
+              "type": "dinner",
+              "cat": "light",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "600g somon fileto (4 porsiyon)",
+                "500g patates",
+                "zeytinyagi",
+                "limon",
+                "2 dis sarimsak",
+                "kekik",
+                "mevsim salatasi"
+              ]
+            },
+            {
+              "id": 49,
+              "name": "Karniyarik + pirinc pilavi",
+              "desc": "Kiymali karniyarik, tereyagli pirinc, yogurt",
+              "type": "dinner",
+              "cat": "balanced",
+              "kid": false,
+              "we": true,
+              "ingredients": [
+                "4 patlican",
+                "400g kiyma",
+                "1 sogan",
+                "2 domates",
+                "2 biber",
+                "2 dis sarimsak",
+                "domates salca",
+                "300g pirinc",
+                "tereyagi",
+                "300g yogurt"
+              ]
+            }
+          ]
+        },
+        "kidS": {
+          "main": {
+            "id": 69,
+            "name": "Minik pankek + meyve + yogurt",
+            "desc": "Kucuk pankekler, meyve, yogurt",
+            "type": "kid-breakfast",
+            "cat": "balanced",
+            "kid": true,
+            "we": true,
+            "ingredients": [
+              "100g un",
+              "200ml sut",
+              "1 yumurta",
+              "kabartma tozu",
+              "tereyagi",
+              "150g mevsim meyvesi",
+              "100g yogurt"
+            ]
+          },
+          "alts": [
+            {
+              "id": 65,
+              "name": "Lor peyniri + bal + ekmek",
+              "desc": "Yumusak lor, bal, ekmek",
+              "type": "kid-breakfast",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "100g lor peyniri",
+                "1 cay kasigi bal",
+                "2 dilim ekmek"
+              ]
+            },
+            {
+              "id": 60,
+              "name": "Yumusak yumurta + peynir + ekmek",
+              "desc": "Cocuk kahvaltisi",
+              "type": "kid-breakfast",
+              "cat": "protein",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "2 yumurta",
+                "50g beyaz peynir",
+                "2 dilim ekmek"
+              ]
+            }
+          ]
+        },
+        "kidL": {
+          "main": {
+            "id": 75,
+            "name": "Sebze pure corbasi + ekmek",
+            "desc": "Karisik sebze puresi, yumusak ekmek",
+            "type": "kid-lunch",
+            "cat": "light",
+            "kid": true,
+            "we": false,
+            "ingredients": [
+              "2 patates",
+              "2 havuc",
+              "1 kabak",
+              "1 sogan",
+              "tereyagi",
+              "100ml sut",
+              "2 dilim ekmek"
+            ]
+          },
+          "alts": [
+            {
+              "id": 71,
+              "name": "Sebzeli makarna + peynir",
+              "desc": "Minik makarna, rendelennis peynir",
+              "type": "kid-lunch",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "200g minik makarna",
+                "1 kabak",
+                "1 havuc",
+                "tereyagi",
+                "50g kasar peynir"
+              ]
+            },
+            {
+              "id": 70,
+              "name": "Mercimek corbasi + yogurt",
+              "desc": "Kirmizi mercimek corbasi, yogurt",
+              "type": "kid-lunch",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "200g kirmizi mercimek",
+                "1 sogan",
+                "1 havuc",
+                "tereyagi",
+                "150g yogurt",
+                "2 dilim ekmek"
+              ]
+            }
+          ]
+        },
+        "kidD": {
+          "main": {
+            "id": 89,
+            "name": "Ispanakli makarna + peynir",
+            "desc": "Ispanakli makarna, peynir",
+            "type": "kid-dinner",
+            "cat": "balanced",
+            "kid": true,
+            "we": false,
+            "ingredients": [
+              "200g minik makarna",
+              "200g ispanak",
+              "1 dis sarimsak",
+              "zeytinyagi",
+              "50g kasar peynir"
+            ]
+          },
+          "alts": [
+            {
+              "id": 82,
+              "name": "Buharla pismis balik + patates pure",
+              "desc": "Yumusak balik, patates puresi",
+              "type": "kid-dinner",
+              "cat": "protein",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "400g beyaz et balik fileto",
+                "400g patates",
+                "50ml sut",
+                "tereyagi",
+                "limon"
+              ]
+            },
+            {
+              "id": 87,
+              "name": "Sebzeli tavuk sote (yumusak)",
+              "desc": "Yumusak pisirilis tavuk sote",
+              "type": "kid-dinner",
+              "cat": "protein",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "300g tavuk gogsu",
+                "1 kabak",
+                "1 havuc",
+                "1/2 sogan",
+                "zeytinyagi",
+                "tereyagi"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "day": "Persembe",
+        "date": "14 Mayıs",
+        "isWe": false,
+        "bf": {
+          "main": {
+            "id": 2,
+            "name": "Yumurta + zeytin + peynir",
+            "desc": "Haslama yumurta, zeytin, beyaz peynir, domates, ekmek",
+            "type": "breakfast",
+            "cat": "protein",
+            "kid": false,
+            "we": false,
+            "ingredients": [
+              "2 yumurta",
+              "50g beyaz peynir",
+              "zeytin 10 adet",
+              "2 domates",
+              "ekmek"
+            ]
+          },
+          "alts": [
+            {
+              "id": 15,
+              "name": "Gevrek + sut + meyve",
+              "desc": "Tam tahilli gevrek, sut, dilimlennis meyve",
+              "type": "breakfast",
+              "cat": "light",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "60g tam tahilli gevrek",
+                "250ml sut",
+                "1 porsiyon mevsim meyvesi"
+              ]
+            },
+            {
+              "id": 4,
+              "name": "Lor peyniri + bal + ceviz",
+              "desc": "Lor tabagi, bal, ceviz, ekmek",
+              "type": "breakfast",
+              "cat": "light",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "150g lor peyniri",
+                "1 yemek kasigi bal",
+                "30g ceviz",
+                "ekmek"
+              ]
+            },
+            {
+              "id": 22,
+              "name": "Pogaca + su boregi + cay",
+              "desc": "Ev yapimi veya hazir pogaca, su boregi",
+              "type": "breakfast",
+              "cat": "balanced",
+              "kid": false,
+              "we": true,
+              "ingredients": [
+                "4 adet pogaca",
+                "4 dilim su boregi"
+              ]
+            }
+          ]
+        },
+        "dn": {
+          "main": {
+            "id": 47,
+            "name": "Ispanak yemegi + yogurt",
+            "desc": "Kiymali ispanak, pirinc pilavi",
+            "type": "dinner",
+            "cat": "balanced",
+            "kid": false,
+            "we": false,
+            "ingredients": [
+              "500g ispanak",
+              "300g kiyma",
+              "1 sogan",
+              "1 yemek kasigi domates salca",
+              "100g pirinc",
+              "zeytinyagi",
+              "300g yogurt"
+            ]
+          },
+          "alts": [
+            {
+              "id": 45,
+              "name": "Kisir + ayran",
+              "desc": "Bol yesillikli kisir, ayran",
+              "type": "dinner",
+              "cat": "light",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "300g ince bulgur",
+                "1 sogan",
+                "2 domates",
+                "1 demet maydanoz",
+                "limon suyu",
+                "nar eksisi",
+                "zeytinyagi",
+                "1L ayran"
+              ]
+            },
+            {
+              "id": 33,
+              "name": "Mercimek kofte + cacik",
+              "desc": "Ev yapimi mercimek kofte, cacik, yesil salata",
+              "type": "dinner",
+              "cat": "light",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "300g kirmizi mercimek",
+                "200g bulgur",
+                "1 sogan",
+                "1 yemek kasigi domates salca",
+                "300g yogurt",
+                "1 salatalik",
+                "2 dis sarimsak",
+                "zeytinyagi"
+              ]
+            },
+            {
+              "id": 34,
+              "name": "Kofte + makarna + salata",
+              "desc": "Ev yapimi izgara kofte, tereyagli makarna",
+              "type": "dinner",
+              "cat": "protein",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "500g kiyma",
+                "1 sogan",
+                "galeta unu",
+                "400g makarna",
+                "tereyagi",
+                "mevsim salatasi"
+              ]
+            }
+          ]
+        },
+        "kidS": {
+          "main": {
+            "id": 64,
+            "name": "Sutlu muhallebi + meyve",
+            "desc": "Ev yapimi muhallebi, meyve",
+            "type": "kid-breakfast",
+            "cat": "light",
+            "kid": true,
+            "we": false,
+            "ingredients": [
+              "500ml sut",
+              "3 yemek kasigi nisasta",
+              "3 yemek kasigi seker",
+              "100g meyve"
+            ]
+          },
+          "alts": [
+            {
+              "id": 66,
+              "name": "Yogurt + muz + bal",
+              "desc": "Karistirmali kase",
+              "type": "kid-breakfast",
+              "cat": "light",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "150g yogurt",
+                "1 muz",
+                "1 cay kasigi bal"
+              ]
+            },
+            {
+              "id": 60,
+              "name": "Yumusak yumurta + peynir + ekmek",
+              "desc": "Cocuk kahvaltisi",
+              "type": "kid-breakfast",
+              "cat": "protein",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "2 yumurta",
+                "50g beyaz peynir",
+                "2 dilim ekmek"
+              ]
+            }
+          ]
+        },
+        "kidL": {
+          "main": {
+            "id": 74,
+            "name": "Patates pure + kofte (kucuk)",
+            "desc": "Minik kofteler, patates puresi",
+            "type": "kid-lunch",
+            "cat": "protein",
+            "kid": true,
+            "we": false,
+            "ingredients": [
+              "200g kiyma",
+              "1/2 sogan",
+              "galeta unu",
+              "400g patates",
+              "50ml sut",
+              "tereyagi"
+            ]
+          },
+          "alts": [
+            {
+              "id": 76,
+              "name": "Peynirli makarna + yogurt",
+              "desc": "Peynirli makarna, yaninda yogurt",
+              "type": "kid-lunch",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "200g minik makarna",
+                "80g kasar peynir",
+                "tereyagi",
+                "150g yogurt"
+              ]
+            },
+            {
+              "id": 79,
+              "name": "Sebzeli eriste + peynir",
+              "desc": "Ev eristesi, sebze, peynir",
+              "type": "kid-lunch",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "200g eriste",
+                "1 havuc",
+                "1 kabak",
+                "tereyagi",
+                "50g kasar peynir"
+              ]
+            }
+          ]
+        },
+        "kidD": {
+          "main": {
+            "id": 87,
+            "name": "Sebzeli tavuk sote (yumusak)",
+            "desc": "Yumusak pisirilis tavuk sote",
+            "type": "kid-dinner",
+            "cat": "protein",
+            "kid": true,
+            "we": false,
+            "ingredients": [
+              "300g tavuk gogsu",
+              "1 kabak",
+              "1 havuc",
+              "1/2 sogan",
+              "zeytinyagi",
+              "tereyagi"
+            ]
+          },
+          "alts": [
+            {
+              "id": 83,
+              "name": "Mercimek corbasi + ekmek + yogurt",
+              "desc": "Mercimek corbasi, ekmek, yogurt",
+              "type": "kid-dinner",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "200g kirmizi mercimek",
+                "1 sogan",
+                "1 havuc",
+                "tereyagi",
+                "2 dilim ekmek",
+                "150g yogurt"
+              ]
+            },
+            {
+              "id": 90,
+              "name": "Patatesli yumurta + salata",
+              "desc": "Patatesli yumurta, mevsim salatasi",
+              "type": "kid-dinner",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "3 yumurta",
+                "2 patates",
+                "1/2 sogan",
+                "zeytinyagi",
+                "mevsim salatasi"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "day": "Cuma",
+        "date": "15 Mayıs",
+        "isWe": false,
+        "bf": {
+          "main": {
+            "id": 13,
+            "name": "Pogaca + peynir + cay",
+            "desc": "Hazir pogaca isitip servis",
+            "type": "breakfast",
+            "cat": "balanced",
+            "kid": false,
+            "we": false,
+            "ingredients": [
+              "3 adet pogaca",
+              "100g beyaz peynir"
+            ]
+          },
+          "alts": [
+            {
+              "id": 18,
+              "name": "Serpme kahvalti",
+              "desc": "Yumurta, peynirler, zeytin, domates, salatalik, bal",
+              "type": "breakfast",
+              "cat": "balanced",
+              "kid": false,
+              "we": true,
+              "ingredients": [
+                "3 yumurta",
+                "150g beyaz peynir",
+                "100g kasar peynir",
+                "zeytin",
+                "2 domates",
+                "2 salatalik",
+                "bal",
+                "kaymak",
+                "ekmek"
+              ]
+            },
+            {
+              "id": 5,
+              "name": "Kasar + domates tost",
+              "desc": "Kasarli tost, domates dilimleri, cay",
+              "type": "breakfast",
+              "cat": "light",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "2 dilim ekmek",
+                "80g kasar peynir",
+                "1 domates",
+                "tereyagi"
+              ]
+            },
+            {
+              "id": 14,
+              "name": "Muzlu smoothie + tost",
+              "desc": "Sut, muz, yulaf smoothie",
+              "type": "breakfast",
+              "cat": "light",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "300ml sut",
+                "1 muz",
+                "2 yemek kasigi yulaf",
+                "2 dilim ekmek",
+                "50g kasar peynir",
+                "tereyagi"
+              ]
+            }
+          ]
+        },
+        "dn": {
+          "main": {
+            "id": 32,
+            "name": "Izgara balik + sebze sote",
+            "desc": "Levrek veya somon, zeytinyagli sebze sote",
+            "type": "dinner",
+            "cat": "light",
+            "kid": false,
+            "we": false,
+            "ingredients": [
+              "600g levrek veya somon (4 porsiyon)",
+              "2 kabak",
+              "2 biber",
+              "zeytinyagi",
+              "limon",
+              "2 dis sarimsak"
+            ]
+          },
+          "alts": [
+            {
+              "id": 50,
+              "name": "Kuzu tandir + pirinc",
+              "desc": "Yavas pisen kuzu tandir, pirinc pilavi",
+              "type": "dinner",
+              "cat": "protein",
+              "kid": false,
+              "we": true,
+              "ingredients": [
+                "1.5kg kuzu but veya omuz",
+                "1 bas sarimsak",
+                "kekik",
+                "pul biber",
+                "zeytinyagi",
+                "400g pirinc",
+                "tereyagi"
+              ]
+            },
+            {
+              "id": 34,
+              "name": "Kofte + makarna + salata",
+              "desc": "Ev yapimi izgara kofte, tereyagli makarna",
+              "type": "dinner",
+              "cat": "protein",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "500g kiyma",
+                "1 sogan",
+                "galeta unu",
+                "400g makarna",
+                "tereyagi",
+                "mevsim salatasi"
+              ]
+            },
+            {
+              "id": 46,
+              "name": "Yaprak sarma + yogurt",
+              "desc": "Zeytinyagli pirinc dolgulu yaprak sarma",
+              "type": "dinner",
+              "cat": "light",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "30-40 adet asma yaprak",
+                "200g pirinc",
+                "2 sogan",
+                "1 yemek kasigi domates salca",
+                "zeytinyagi",
+                "limon",
+                "nane",
+                "300g yogurt"
+              ]
+            }
+          ]
+        },
+        "kidS": {
+          "main": {
+            "id": 60,
+            "name": "Yumusak yumurta + peynir + ekmek",
+            "desc": "Cocuk kahvaltisi",
+            "type": "kid-breakfast",
+            "cat": "protein",
+            "kid": true,
+            "we": false,
+            "ingredients": [
+              "2 yumurta",
+              "50g beyaz peynir",
+              "2 dilim ekmek"
+            ]
+          },
+          "alts": [
+            {
+              "id": 95,
+              "name": "Peynirli gozleme (yumusak)",
+              "desc": "Yumusak gozleme, meyve",
+              "type": "kid-breakfast",
+              "cat": "balanced",
+              "kid": true,
+              "we": true,
+              "ingredients": [
+                "2 adet yufka",
+                "100g kasar peynir",
+                "tereyagi",
+                "150g mevsim meyvesi"
+              ]
+            },
+            {
+              "id": 62,
+              "name": "Peynirli tost + meyve",
+              "desc": "Minik tost, mevsim meyvesi",
+              "type": "kid-breakfast",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "2 dilim ekmek",
+                "50g kasar peynir",
+                "100g mevsim meyvesi",
+                "tereyagi"
+              ]
+            }
+          ]
+        },
+        "kidL": {
+          "main": {
+            "id": 70,
+            "name": "Mercimek corbasi + yogurt",
+            "desc": "Kirmizi mercimek corbasi, yogurt",
+            "type": "kid-lunch",
+            "cat": "balanced",
+            "kid": true,
+            "we": false,
+            "ingredients": [
+              "200g kirmizi mercimek",
+              "1 sogan",
+              "1 havuc",
+              "tereyagi",
+              "150g yogurt",
+              "2 dilim ekmek"
+            ]
+          },
+          "alts": [
+            {
+              "id": 73,
+              "name": "Yogurtlu ispanak + pirinc",
+              "desc": "Ispanak yemegi, pirinc, yogurt",
+              "type": "kid-lunch",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "300g ispanak",
+                "150g pirinc",
+                "1 sogan",
+                "zeytinyagi",
+                "200g yogurt"
+              ]
+            },
+            {
+              "id": 77,
+              "name": "Kabak mucver (firinda)",
+              "desc": "Firinda kabak mucveri",
+              "type": "kid-lunch",
+              "cat": "light",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "400g kabak",
+                "2 yumurta",
+                "3 yemek kasigi un",
+                "50g kasar peynir",
+                "dereotu",
+                "zeytinyagi"
+              ]
+            }
+          ]
+        },
+        "kidD": {
+          "main": {
+            "id": 94,
+            "name": "Kiymali patlican pure + pirinc",
+            "desc": "Patlican pure, kiyma, pirinc, yogurt",
+            "type": "kid-dinner",
+            "cat": "balanced",
+            "kid": true,
+            "we": true,
+            "ingredients": [
+              "2 patlican",
+              "250g kiyma",
+              "1/2 sogan",
+              "1 domates",
+              "200g pirinc",
+              "150g yogurt",
+              "zeytinyagi"
+            ]
+          },
+          "alts": [
+            {
+              "id": 90,
+              "name": "Patatesli yumurta + salata",
+              "desc": "Patatesli yumurta, mevsim salatasi",
+              "type": "kid-dinner",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "3 yumurta",
+                "2 patates",
+                "1/2 sogan",
+                "zeytinyagi",
+                "mevsim salatasi"
+              ]
+            },
+            {
+              "id": 84,
+              "name": "Domates soslu makarna + yogurt",
+              "desc": "Domates sos, makarna, yogurt",
+              "type": "kid-dinner",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "200g minik makarna",
+                "3 domates",
+                "1/2 sogan",
+                "zeytinyagi",
+                "150g yogurt"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "day": "Cumartesi",
+        "date": "16 Mayıs",
+        "isWe": true,
+        "bf": {
+          "main": {
+            "id": 12,
+            "name": "Yogurt + granola + meyve",
+            "desc": "Hafif ve besleyici kahvalti kasesi",
+            "type": "breakfast",
+            "cat": "light",
+            "kid": false,
+            "we": false,
+            "ingredients": [
+              "200g yogurt",
+              "50g granola",
+              "100g mevsim meyvesi"
+            ]
+          },
+          "alts": [
+            {
+              "id": 7,
+              "name": "Sutlu yulaf + muz",
+              "desc": "Yulaf lapasi, muz ve bal ile",
+              "type": "breakfast",
+              "cat": "light",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "60g yulaf",
+                "200ml sut",
+                "1 muz",
+                "1 cay kasigi bal"
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Tahin pekmez + peynir",
+              "desc": "Tatli-tuzlu klasik kahvalti, ekmek",
+              "type": "breakfast",
+              "cat": "balanced",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "2 yemek kasigi tahin",
+                "2 yemek kasigi pekmez",
+                "100g beyaz peynir",
+                "ekmek"
+              ]
+            },
+            {
+              "id": 15,
+              "name": "Gevrek + sut + meyve",
+              "desc": "Tam tahilli gevrek, sut, dilimlennis meyve",
+              "type": "breakfast",
+              "cat": "light",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "60g tam tahilli gevrek",
+                "250ml sut",
+                "1 porsiyon mevsim meyvesi"
+              ]
+            }
+          ]
+        },
+        "dn": {
+          "main": {
+            "id": 39,
+            "name": "Tavuk sis + pirinc pilavi",
+            "desc": "Marine tavuk sis, pirinc, salata",
+            "type": "dinner",
+            "cat": "protein",
+            "kid": false,
+            "we": false,
+            "ingredients": [
+              "1kg tavuk gogsu",
+              "1 sogan",
+              "2 biber",
+              "zeytinyagi",
+              "kekik",
+              "pul biber",
+              "300g pirinc",
+              "tereyagi",
+              "mevsim salatasi"
+            ],
+            "servings": "",
+            "instructions": ""
+          },
+          "alts": [
+            {
+              "id": 35,
+              "name": "Tavuk sote + makarna",
+              "desc": "Sebzeli tavuk sote, makarna",
+              "type": "dinner",
+              "cat": "protein",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "400g tavuk gogsu",
+                "1 kabak",
+                "1 biber",
+                "1 sogan",
+                "1 domates",
+                "400g makarna",
+                "zeytinyagi"
+              ]
+            },
+            {
+              "id": 42,
+              "name": "Somon firin + patates",
+              "desc": "Firinda somon, firin patates, salata",
+              "type": "dinner",
+              "cat": "light",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "600g somon fileto (4 porsiyon)",
+                "500g patates",
+                "zeytinyagi",
+                "limon",
+                "2 dis sarimsak",
+                "kekik",
+                "mevsim salatasi"
+              ]
+            },
+            {
+              "id": 53,
+              "name": "Mantarli tavuk sac",
+              "desc": "Tavuk sac kavurma, mantar, biber, salata",
+              "type": "dinner",
+              "cat": "protein",
+              "kid": false,
+              "we": true,
+              "ingredients": [
+                "500g tavuk gogsu",
+                "300g mantar",
+                "2 biber",
+                "1 sogan",
+                "zeytinyagi",
+                "2 dis sarimsak",
+                "mevsim salatasi"
+              ]
+            }
+          ]
+        },
+        "kidS": {
+          "main": {
+            "id": 68,
+            "name": "Yumusak menemen + peynir",
+            "desc": "Az baharatli yumusak menemen",
+            "type": "kid-breakfast",
+            "cat": "balanced",
+            "kid": true,
+            "we": true,
+            "ingredients": [
+              "2 yumurta",
+              "1 domates",
+              "az biber",
+              "50g beyaz peynir",
+              "zeytinyagi",
+              "2 dilim ekmek"
+            ]
+          },
+          "alts": [
+            {
+              "id": 62,
+              "name": "Peynirli tost + meyve",
+              "desc": "Minik tost, mevsim meyvesi",
+              "type": "kid-breakfast",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "2 dilim ekmek",
+                "50g kasar peynir",
+                "100g mevsim meyvesi",
+                "tereyagi"
+              ]
+            },
+            {
+              "id": 66,
+              "name": "Yogurt + muz + bal",
+              "desc": "Karistirmali kase",
+              "type": "kid-breakfast",
+              "cat": "light",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "150g yogurt",
+                "1 muz",
+                "1 cay kasigi bal"
+              ]
+            }
+          ]
+        },
+        "kidL": {
+          "main": {
+            "id": 76,
+            "name": "Peynirli makarna + yogurt",
+            "desc": "Peynirli makarna, yaninda yogurt",
+            "type": "kid-lunch",
+            "cat": "balanced",
+            "kid": true,
+            "we": false,
+            "ingredients": [
+              "200g minik makarna",
+              "80g kasar peynir",
+              "tereyagi",
+              "150g yogurt"
+            ]
+          },
+          "alts": [
+            {
+              "id": 77,
+              "name": "Kabak mucver (firinda)",
+              "desc": "Firinda kabak mucveri",
+              "type": "kid-lunch",
+              "cat": "light",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "400g kabak",
+                "2 yumurta",
+                "3 yemek kasigi un",
+                "50g kasar peynir",
+                "dereotu",
+                "zeytinyagi"
+              ]
+            },
+            {
+              "id": 73,
+              "name": "Yogurtlu ispanak + pirinc",
+              "desc": "Ispanak yemegi, pirinc, yogurt",
+              "type": "kid-lunch",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "300g ispanak",
+                "150g pirinc",
+                "1 sogan",
+                "zeytinyagi",
+                "200g yogurt"
+              ]
+            }
+          ]
+        },
+        "kidD": {
+          "main": {
+            "id": 80,
+            "name": "Dogranmis tavuk + bulgur + havuc pure",
+            "desc": "Yumusak tavuk, bulgur, havuc",
+            "type": "kid-dinner",
+            "cat": "protein",
+            "kid": true,
+            "we": false,
+            "ingredients": [
+              "300g tavuk gogsu",
+              "200g bulgur",
+              "3 havuc",
+              "tereyagi",
+              "zeytinyagi"
+            ]
+          },
+          "alts": [
+            {
+              "id": 85,
+              "name": "Sebzeli pilav + yogurt",
+              "desc": "Karisik sebzeli pirinc, yogurt",
+              "type": "kid-dinner",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "200g pirinc",
+                "1 havuc",
+                "100g bezelye",
+                "tereyagi",
+                "150g yogurt"
+              ]
+            },
+            {
+              "id": 81,
+              "name": "Kuru fasulye (ezilmis) + pirinc",
+              "desc": "Ezilmis fasulye, pirinc",
+              "type": "kid-dinner",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "300g kuru fasulye",
+                "1 sogan",
+                "1 yemek kasigi domates salca",
+                "zeytinyagi",
+                "200g pirinc",
+                "tereyagi"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "day": "Pazar",
+        "date": "17 Mayıs",
+        "isWe": true,
+        "bf": {
+          "main": {
+            "id": 5,
+            "name": "Kasar + domates tost",
+            "desc": "Kasarli tost, domates dilimleri, cay",
+            "type": "breakfast",
+            "cat": "light",
+            "kid": false,
+            "we": false,
+            "ingredients": [
+              "2 dilim ekmek",
+              "80g kasar peynir",
+              "1 domates",
+              "tereyagi"
+            ]
+          },
+          "alts": [
+            {
+              "id": 11,
+              "name": "Tahin pekmez + peynir",
+              "desc": "Tatli-tuzlu klasik kahvalti, ekmek",
+              "type": "breakfast",
+              "cat": "balanced",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "2 yemek kasigi tahin",
+                "2 yemek kasigi pekmez",
+                "100g beyaz peynir",
+                "ekmek"
+              ]
+            },
+            {
+              "id": 8,
+              "name": "Labneli ekmek + salatalik",
+              "desc": "Labneh peyniri, salatalik, domates",
+              "type": "breakfast",
+              "cat": "light",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "2 dilim ekmek",
+                "100g labneh peyniri",
+                "1 salatalik",
+                "1 domates"
+              ]
+            },
+            {
+              "id": 23,
+              "name": "Puf borek + kahvalti tabagi",
+              "desc": "Buzdobabindan firinda 15dk, yaninda peynir",
+              "type": "breakfast",
+              "cat": "balanced",
+              "kid": false,
+              "we": true,
+              "ingredients": [
+                "6 adet puf borek",
+                "100g beyaz peynir",
+                "2 domates",
+                "zeytin"
+              ]
+            }
+          ]
+        },
+        "dn": {
+          "main": {
+            "id": 34,
+            "name": "Kofte + makarna + salata",
+            "desc": "Ev yapimi izgara kofte, tereyagli makarna",
+            "type": "dinner",
+            "cat": "protein",
+            "kid": false,
+            "we": false,
+            "ingredients": [
+              "500g kiyma",
+              "1 sogan",
+              "galeta unu",
+              "400g makarna",
+              "tereyagi",
+              "mevsim salatasi"
+            ]
+          },
+          "alts": [
+            {
+              "id": 36,
+              "name": "Nohut yemegi + bulgur",
+              "desc": "Etli nohut, bulgur pilavi",
+              "type": "dinner",
+              "cat": "balanced",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "400g nohut",
+                "300g kusbasi et",
+                "1 sogan",
+                "2 yemek kasigi domates salca",
+                "300g bulgur",
+                "tereyagi"
+              ]
+            },
+            {
+              "id": 33,
+              "name": "Mercimek kofte + cacik",
+              "desc": "Ev yapimi mercimek kofte, cacik, yesil salata",
+              "type": "dinner",
+              "cat": "light",
+              "kid": false,
+              "we": false,
+              "ingredients": [
+                "300g kirmizi mercimek",
+                "200g bulgur",
+                "1 sogan",
+                "1 yemek kasigi domates salca",
+                "300g yogurt",
+                "1 salatalik",
+                "2 dis sarimsak",
+                "zeytinyagi"
+              ]
+            },
+            {
+              "id": 50,
+              "name": "Kuzu tandir + pirinc",
+              "desc": "Yavas pisen kuzu tandir, pirinc pilavi",
+              "type": "dinner",
+              "cat": "protein",
+              "kid": false,
+              "we": true,
+              "ingredients": [
+                "1.5kg kuzu but veya omuz",
+                "1 bas sarimsak",
+                "kekik",
+                "pul biber",
+                "zeytinyagi",
+                "400g pirinc",
+                "tereyagi"
+              ]
+            }
+          ]
+        },
+        "kidS": {
+          "main": {
+            "id": 60,
+            "name": "Yumusak yumurta + peynir + ekmek",
+            "desc": "Cocuk kahvaltisi",
+            "type": "kid-breakfast",
+            "cat": "protein",
+            "kid": true,
+            "we": false,
+            "ingredients": [
+              "2 yumurta",
+              "50g beyaz peynir",
+              "2 dilim ekmek"
+            ]
+          },
+          "alts": [
+            {
+              "id": 63,
+              "name": "Peynirli omlet + ekmek",
+              "desc": "Yumusak omlet, ekmek",
+              "type": "kid-breakfast",
+              "cat": "protein",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "2 yumurta",
+                "30g kasar peynir",
+                "tereyagi",
+                "1 dilim ekmek"
+              ]
+            },
+            {
+              "id": 66,
+              "name": "Yogurt + muz + bal",
+              "desc": "Karistirmali kase",
+              "type": "kid-breakfast",
+              "cat": "light",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "150g yogurt",
+                "1 muz",
+                "1 cay kasigi bal"
+              ]
+            }
+          ]
+        },
+        "kidL": {
+          "main": {
+            "id": 75,
+            "name": "Sebze pure corbasi + ekmek",
+            "desc": "Karisik sebze puresi, yumusak ekmek",
+            "type": "kid-lunch",
+            "cat": "light",
+            "kid": true,
+            "we": false,
+            "ingredients": [
+              "2 patates",
+              "2 havuc",
+              "1 kabak",
+              "1 sogan",
+              "tereyagi",
+              "100ml sut",
+              "2 dilim ekmek"
+            ]
+          },
+          "alts": [
+            {
+              "id": 73,
+              "name": "Yogurtlu ispanak + pirinc",
+              "desc": "Ispanak yemegi, pirinc, yogurt",
+              "type": "kid-lunch",
+              "cat": "balanced",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "300g ispanak",
+                "150g pirinc",
+                "1 sogan",
+                "zeytinyagi",
+                "200g yogurt"
+              ]
+            },
+            {
+              "id": 77,
+              "name": "Kabak mucver (firinda)",
+              "desc": "Firinda kabak mucveri",
+              "type": "kid-lunch",
+              "cat": "light",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "400g kabak",
+                "2 yumurta",
+                "3 yemek kasigi un",
+                "50g kasar peynir",
+                "dereotu",
+                "zeytinyagi"
+              ]
+            }
+          ]
+        },
+        "kidD": {
+          "main": {
+            "id": 90,
+            "name": "Patatesli yumurta + salata",
+            "desc": "Patatesli yumurta, mevsim salatasi",
+            "type": "kid-dinner",
+            "cat": "balanced",
+            "kid": true,
+            "we": false,
+            "ingredients": [
+              "3 yumurta",
+              "2 patates",
+              "1/2 sogan",
+              "zeytinyagi",
+              "mevsim salatasi"
+            ]
+          },
+          "alts": [
+            {
+              "id": 86,
+              "name": "Firinda minik kofte + patates pure",
+              "desc": "Kucuk kofteler, patates puresi",
+              "type": "kid-dinner",
+              "cat": "protein",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "300g kiyma",
+                "1/2 sogan",
+                "galeta unu",
+                "400g patates",
+                "50ml sut",
+                "tereyagi"
+              ]
+            },
+            {
+              "id": 80,
+              "name": "Dogranmis tavuk + bulgur + havuc pure",
+              "desc": "Yumusak tavuk, bulgur, havuc",
+              "type": "kid-dinner",
+              "cat": "protein",
+              "kid": true,
+              "we": false,
+              "ingredients": [
+                "300g tavuk gogsu",
+                "200g bulgur",
+                "3 havuc",
+                "tereyagi",
+                "zeytinyagi"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "shopChecks": {
+    "auto-Protein-Yumurta%20(10lu)": true
+  },
+  "shopCustom": {
+    "day-0": []
+  },
+  "shopEdits": {
+    "auto-Diger-3%20kutu%20ton%20baligi": {
+      "hidden": true
+    },
+    "auto-Protein-Beyaz%20peynir%20(250g)": {
+      "hidden": true
+    }
+  }
+}
